@@ -1,2 +1,0 @@
-# Seychelles
-Lets go !!
