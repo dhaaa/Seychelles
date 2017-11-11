@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="f831ca70-f0d7-416b-89e0-97b9b1aaaa21" activeEnvironment="Default" name="Acco_CCE_Client_Transactional_Project" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="c88d4b94-9ad4-4c56-9c4d-e9ee2c7204c3" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8080" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:8080</con:endpoint></con:endpoints><con:resource name="ClientTransactionalRules" path="/kie-server/services/rest/server/containers/instances/ClientTransactionalRules" id="5e5e5a78-69ad-418d-9710-f536b084607c"><con:settings/><con:parameters/><con:method name="ClientTransactionalRules" id="8eebb355-c72c-4501-a191-188018c4edb5" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cli="http://localhost/kie-server/services/rest/server/containers/instances/ClientTransactionalRules">cli:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="SingleHotel_SingleRoom" id="a7a03a5a-c319-4e02-8458-44dfbe9e0ee3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{ "lookup" : "clienttransactionalsession",
+  "commands" : [ 
+    
+    { "insert" : {"out-identifier":"BusinessRuleIntake","return-object":false,"entry-point":"DEFAULT",
+    "object":{"cnk.acco_commercialscalculationengine.clienttransactionalrules.Root":{
+      
+        "header":{
+    		"transactionID":"12345",
+    		"sessionId":"abc@123",
+    		"operationName":"Search",
+    		"userID":"Vasudha"
+    		},
+    	
+      "businessRuleIntake": [
+        {
+          "commonElements": {
+            "supplier": "GTA",
+            "supplierMarket": "India",
+            "productCategorySubType": "Hotels",
+            "contractValidity": "2017-09-18T00:00:00",
+            "clientType":"B2B",
+            "clientGroup":"CG1",
+            "clientName":"CN1",
+            "rateType":"RT1",       
+            "rateCode": "RC1"
+          },
+          "slabDetails" : [
+          {
+            "slabType": "TotalRevenue",
+            "slabTypeValue": "1500"
+          },
+          {
+            "slabType": "TotalPassengers",
+            "slabTypeValue": "4500"
+          }
+        ],
+       "advancedDefinition": {
+       	 	"travelDate": "2017-03-16T00:00:00+05:30",
+          	"salesDate":"2017-03-16T00:00:00+05:30",
+          	"fromContinent":"Asia",
+          	"fromCountry":"India",
+          	"fromState":"Maharashtra",
+          	"fromCity":"Mumbai",
+          	"viaContinent":"Asia",
+          	"viaCountry":"India",
+          	"toContinent":"Asia",
+          	"toCountry":"India",
+          	"toCity":"Delhi",
+          	"bookingType" : "Online",
+          	"credentialsName" :"GTA",
+          	"nationality":"Indian"
+
+      },
+	  "entityDetails":[
+	  {
+		"entityType":"ClientType",
+		"entityName":"CnKB2BIndEng",
+		"entityMarket":"India"
+	  }	
+	  ],
+	  "hotelDetails":[
+	  {
+	  	"productChain" :"Taj Group",
+	  	"productBrand" : "Taj India",
+	  	"productName" :"Taj Vivanta",
+	  	"roomDetails":[{
+          		"roomCategory": "Deluxe Studio",
+          		"roomType": "Double",
+          		"passengerType" : "ADT",
+          		"fareBreakUp": {
+          	   		"baseFare" :"1800",
+          	   		"totalFare" : "2000",
+          	   		"taxDetails" :[
+          	   			{
+          	   				"taxName" :"YQ",
+          	   				"taxValue" : "50"
+          	   			},
+          	   			{
+          	   				"taxName" :"RT",
+          	   				"taxValue" : "150"
+          	   			}
+          	   		]
+          		},
+          		"commercialDetails":[{
+          			 "commercialName": "Standard",
+                              "commercialInitialAmount": 1850,
+                              "commercialCalculationPercentage": 5,
+                              "commercialCalculationAmount": 0,
+                              "commercialAmount": 92.5,
+                              "commercialTotalAmount": 1757.5,
+                              "commercialCurrency": null,
+                              "commercialFareComponent": "Basic,YQ",
+                              "fareBreakUp": {
+                                 "baseFare": 1710,
+                                 "taxDetails": [{
+                                    "taxName": "YQ",
+                                    "taxValue": 47.5
+                                 }]
+                              }
+                },
+                	{
+                              "commercialName": "Overriding",
+                              "commercialInitialAmount": 1900,
+                              "commercialCalculationPercentage": 10,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 390,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Basic,YQ,RT",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1339,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 42.75
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 128.25
+                                    }
+                                 ]
+                              }
+                      },
+                      {
+                              "commercialName": "PLB",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           },
+                           {
+                              "commercialName": "DestinationIncentive",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           },
+                             {
+                              "commercialName": "ServiceCharge",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           },
+                           {
+                              "commercialName": "SegmentFees",
+                              "commercialInitialAmount": 1800,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1600,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1600,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 50
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 150
+                                    }
+                                 ]
+                              }
+                           },
+                                                      {
+                              "commercialName": "ManagementFees",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           }
+				]
+          			}
+          	 
+	  	]
+	  }
+	  ]
+        }]
+		}}}},		  
+    { "fire-all-rules" : {} },{"get-objects": {"out-identifier":"Response"}}
+    
+  ]
+}</con:request><con:originalUri>http://localhost/kie-server/services/rest/server/containers/instances/ClientTransactionalRules</con:originalUri><con:credentials><con:username>kieserver</con:username><con:password>kieserver1!</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="SingleHotel_MultipleRooms" id="a7a03a5a-c319-4e02-8458-44dfbe9e0ee3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{ "lookup" : "clienttransactionalsession",
+  "commands" : [ 
+    
+    { "insert" : {"out-identifier":"BusinessRuleIntake","return-object":false,"entry-point":"DEFAULT",
+    "object":{"cnk.acco_commercialscalculationengine.clienttransactionalrules.Root":{
+      
+        "header":{
+    		"transactionID":"12345",
+    		"sessionId":"abc@123",
+    		"operationName":"Search",
+    		"userID":"Vasudha"
+    		},
+    	
+      "businessRuleIntake": [
+        {
+          "commonElements": {
+            "supplier": "GTA",
+            "supplierMarket": "India",
+            "productCategorySubType": "Hotels",
+            "contractValidity": "2017-09-18T00:00:00",
+            "clientType":"B2B",
+            "clientGroup":"CG1",
+            "clientName":"CN1",
+            "rateType":"RT1",       
+            "rateCode": "RC1"
+          },
+          "slabDetails" : [
+          {
+            "slabType": "TotalRevenue",
+            "slabTypeValue": "1500"
+          },
+          {
+            "slabType": "TotalPassengers",
+            "slabTypeValue": "4500"
+          }
+        ],
+       "advancedDefinition": {
+       	 	"travelDate": "2017-03-16T00:00:00+05:30",
+          	"salesDate":"2017-03-16T00:00:00+05:30",
+          	"fromContinent":"Asia",
+          	"fromCountry":"India",
+          	"fromState":"Maharashtra",
+          	"fromCity":"Mumbai",
+          	"viaContinent":"Asia",
+          	"viaCountry":"India",
+          	"toContinent":"Asia",
+          	"toCountry":"India",
+          	"toCity":"Delhi",
+          	"bookingType" : "Online",
+          	"credentialsName" :"GTA",
+          	"nationality":"Indian"
+
+      },
+	  "entityDetails":[
+	  {
+		"entityType":"ClientType",
+		"entityName":"CnKB2BIndEng",
+		"entityMarket":"India"
+	  }	
+	  ],
+	  "hotelDetails":[
+	  {
+	  	"productChain" :"Taj Group",
+	  	"productBrand" : "Taj India",
+	  	"productName" :"Taj Vivanta",
+	  	"roomDetails":[{
+          		"roomCategory": "Deluxe Studio",
+          		"roomType": "Double",
+          		"passengerType" : "ADT",
+          		"fareBreakUp": {
+          	   		"baseFare" :"1800",
+          	   		"totalFare" : "2000",
+          	   		"taxDetails" :[
+          	   			{
+          	   				"taxName" :"YQ",
+          	   				"taxValue" : "50"
+          	   			},
+          	   			{
+          	   				"taxName" :"RT",
+          	   				"taxValue" : "150"
+          	   			}
+          	   		]
+          		},
+          		"commercialDetails":[{
+          			 "commercialName": "Standard",
+                              "commercialInitialAmount": 1850,
+                              "commercialCalculationPercentage": 5,
+                              "commercialCalculationAmount": 0,
+                              "commercialAmount": 92.5,
+                              "commercialTotalAmount": 1757.5,
+                              "commercialCurrency": null,
+                              "commercialFareComponent": "Basic,YQ",
+                              "fareBreakUp": {
+                                 "baseFare": 1710,
+                                 "taxDetails": [{
+                                    "taxName": "YQ",
+                                    "taxValue": 47.5
+                                 }]
+                              }
+                },
+                	{
+                              "commercialName": "Overriding",
+                              "commercialInitialAmount": 1900,
+                              "commercialCalculationPercentage": 10,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 390,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Basic,YQ,RT",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1339,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 42.75
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 128.25
+                                    }
+                                 ]
+                              }
+                      },
+                      {
+                              "commercialName": "PLB",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           },
+                           {
+                              "commercialName": "DestinationIncentive",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           },
+                             {
+                              "commercialName": "ServiceCharge",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           },
+                           {
+                              "commercialName": "SegmentFees",
+                              "commercialInitialAmount": 1800,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1600,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1600,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 50
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 150
+                                    }
+                                 ]
+                              }
+                           },
+                                                      {
+                              "commercialName": "ManagementFees",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           }
+				]
+          			}
+          	 
+	  	]
+	  }
+	  ]
+        }]
+		}}}},		  
+    { "fire-all-rules" : {} },{"get-objects": {"out-identifier":"Response"}}
+    
+  ]
+}</con:request><con:originalUri>http://localhost/kie-server/services/rest/server/containers/instances/ClientTransactionalRules</con:originalUri><con:credentials><con:username>kieserver</con:username><con:password>kieserver1!</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="SingleHotel_SingleRoom_MultipleEntities" id="a7a03a5a-c319-4e02-8458-44dfbe9e0ee3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{ "lookup" : "clienttransactionalsession",
+  "commands" : [ 
+    
+    { "insert" : {"out-identifier":"BusinessRuleIntake","return-object":false,"entry-point":"DEFAULT",
+    "object":{"cnk.acco_commercialscalculationengine.clienttransactionalrules.Root":{
+      
+        "header":{
+    		"transactionID":"12345",
+    		"sessionId":"abc@123",
+    		"operationName":"Search",
+    		"userID":"Vasudha"
+    		},
+    	
+      "businessRuleIntake": [
+        {
+          "commonElements": {
+            "supplier": "GTA",
+            "supplierMarket": "India",
+            "productCategorySubType": "Hotels",
+            "contractValidity": "2017-09-18T00:00:00",
+            "clientType":"B2B",
+            "clientGroup":"CG1",
+            "clientName":"CN1",
+            "rateType":"RT1",       
+            "rateCode": "RC1"
+          },
+          "slabDetails" : [
+          {
+            "slabType": "TotalRevenue",
+            "slabTypeValue": "1500"
+          },
+          {
+            "slabType": "TotalPassengers",
+            "slabTypeValue": "4500"
+          }
+        ],
+       "advancedDefinition": {
+       	 	"travelDate": "2017-03-16T00:00:00+05:30",
+          	"salesDate":"2017-03-16T00:00:00+05:30",
+          	"fromContinent":"Asia",
+          	"fromCountry":"India",
+          	"fromState":"Maharashtra",
+          	"fromCity":"Mumbai",
+          	"viaContinent":"Asia",
+          	"viaCountry":"India",
+          	"toContinent":"Asia",
+          	"toCountry":"India",
+          	"toCity":"Delhi",
+          	"bookingType" : "Online",
+          	"credentialsName" :"GTA",
+          	"nationality":"Indian"
+
+      },
+	  "entityDetails":[
+	  {
+		"entityType":"ClientType",
+		"entityName":"CnKB2BIndEng",
+		"entityMarket":"India"
+	  },
+	   {
+		"entityType":"ClientSpecific",
+		"entityName":"AkbarTravels",
+		"entityMarket":"India",
+		"parentEntityName":"CnKB2BIndEng"
+	  }	
+	  ],
+	  "hotelDetails":[
+	  {
+	  	"productChain" :"Taj Group",
+	  	"productBrand" : "Taj India",
+	  	"productName" :"Taj Vivanta",
+	  	"roomDetails":[{
+          		"roomCategory": "Deluxe Studio",
+          		"roomType": "Double",
+          		"passengerType" : "ADT",
+          		"fareBreakUp": {
+          	   		"baseFare" :"1800",
+          	   		"totalFare" : "2000",
+          	   		"taxDetails" :[
+          	   			{
+          	   				"taxName" :"YQ",
+          	   				"taxValue" : "50"
+          	   			},
+          	   			{
+          	   				"taxName" :"RT",
+          	   				"taxValue" : "150"
+          	   			}
+          	   		]
+          		},
+          		"commercialDetails":[{
+          			 "commercialName": "Standard",
+                              "commercialInitialAmount": 1850,
+                              "commercialCalculationPercentage": 5,
+                              "commercialCalculationAmount": 0,
+                              "commercialAmount": 92.5,
+                              "commercialTotalAmount": 1757.5,
+                              "commercialCurrency": null,
+                              "commercialFareComponent": "Basic,YQ",
+                              "fareBreakUp": {
+                                 "baseFare": 1710,
+                                 "taxDetails": [{
+                                    "taxName": "YQ",
+                                    "taxValue": 47.5
+                                 }]
+                              }
+                },
+                	{
+                              "commercialName": "Overriding",
+                              "commercialInitialAmount": 1900,
+                              "commercialCalculationPercentage": 10,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 390,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Basic,YQ,RT",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1339,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 42.75
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 128.25
+                                    }
+                                 ]
+                              }
+                      },
+                      {
+                              "commercialName": "PLB",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           },
+                           {
+                              "commercialName": "DestinationIncentive",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           },
+                             {
+                              "commercialName": "ServiceCharge",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           },
+                           {
+                              "commercialName": "SegmentFees",
+                              "commercialInitialAmount": 1800,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1600,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1600,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 50
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 150
+                                    }
+                                 ]
+                              }
+                           },
+                                                      {
+                              "commercialName": "ManagementFees",
+                              "commercialInitialAmount": 1710,
+                              "commercialCalculationPercentage": 0,
+                              "commercialCalculationAmount": 200,
+                              "commercialAmount": 200,
+                              "commercialTotalAmount": 1510,
+                              "commercialCurrency": "INR",
+                              "commercialFareComponent": "Total",
+                              "fareBreakUp":                               {
+                                 "baseFare": 1510,
+                                 "taxDetails":                                  [
+                                                                        {
+                                       "taxName": "YQ",
+                                       "taxValue": 47.5
+                                    },
+                                                                        {
+                                       "taxName": "RT",
+                                       "taxValue": 142.5
+                                    }
+                                 ]
+                              }
+                           }
+				]
+          			}
+          	 
+	  	]
+	  }
+	  ]
+        }]
+		}}}},		  
+    { "fire-all-rules" : {} },{"get-objects": {"out-identifier":"Response"}}
+    
+  ]
+}</con:request><con:originalUri>http://localhost/kie-server/services/rest/server/containers/instances/ClientTransactionalRules</con:originalUri><con:credentials><con:username>kieserver</con:username><con:password>kieserver1!</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of SingleHotel_SingleRoom" id="a7a03a5a-c319-4e02-8458-44dfbe9e0ee3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"lookup": "clienttransactionalsession",
+	"commands": [
+
+		{
+			"insert": {
+				"out-identifier": "BusinessRuleIntake",
+				"return-object": false,
+				"entry-point": "DEFAULT",
+				"object": {
+					"cnk.acco_commercialscalculationengine.clienttransactionalrules.Root": {
+
+						"header": {
+							"transactionID": "12345",
+							"sessionId": "abc@123",
+							"operationName": "Search",
+							"userID": "Vasudha"
+						},
+
+						"businessRuleIntake": [{
+							"commonElements": {
+								"supplier": "GTA",
+								"supplierMarket": "India",
+								"productCategorySubType": "Hotels",
+								"contractValidity": "2017-09-18T00:00:00",
+								"clientType": "B2B",
+								"clientGroup": "CG1",
+								"clientName": "CN1",
+								"rateType": "RT1",
+								"rateCode": "RC1"
+							},
+							"slabDetails": [{
+									"slabType": "TotalRevenue",
+									"slabTypeValue": "1500"
+								},
+								{
+									"slabType": "TotalPassengers",
+									"slabTypeValue": "4500"
+								}
+							],
+							"advancedDefinition": {
+								"travelDate": "2017-03-16T00:00:00+05:30",
+								"salesDate": "2017-03-16T00:00:00+05:30",
+								"fromContinent": "Asia",
+								"fromCountry": "India",
+								"fromState": "Maharashtra",
+								"fromCity": "Mumbai",
+								"viaContinent": "Asia",
+								"viaCountry": "India",
+								"toContinent": "Asia",
+								"toCountry": "India",
+								"toCity": "Delhi",
+								"bookingType": "Online",
+								"credentialsName": "GTA",
+								"nationality": "Indian"
+
+							},
+							"entityDetails": [{
+								"entityType": "ClientType",
+								"entityName": "CnKB2BIndEng",
+								"entityMarket": "India"
+							}],
+							"hotelDetails": [{
+								"productChain": "Taj Group",
+								"productBrand": "Taj India",
+								"productName": "Taj Vivanta",
+								"roomDetails": [{
+										"roomCategory": "Deluxe Studio",
+										"roomType": "Double",
+										"passengerType": "ADT",
+										"fareBreakUp": {
+											"baseFare": "1800",
+											"totalFare": "2000",
+											"taxDetails": [{
+													"taxName": "YQ",
+													"taxValue": "50"
+												},
+												{
+													"taxName": "RT",
+													"taxValue": "150"
+												}
+											]
+										},
+										"commercialDetails": [{
+												"commercialName": "Standard",
+												"commercialInitialAmount": 5000,
+												"commercialCalculationPercentage": 5,
+												"commercialCalculationAmount": 0,
+												"commercialAmount": 250,
+												"commercialTotalAmount": 4750,
+												"commercialCurrency": null,
+												"commercialFareComponent": "Basic,YQ,RT",
+												"fareBreakUp": {
+													"baseFare": 3800,
+													"taxDetails": [{
+															"taxName": "YQ",
+															"taxValue": 475
+														},
+														{
+															"taxName": "RT",
+															"taxValue": 475
+														}
+													]
+												}
+											},
+											{
+												"commercialName": "Overriding",
+												"commercialInitialAmount": 4750,
+												"commercialCalculationPercentage": 10,
+												"commercialCalculationAmount": 200,
+												"commercialAmount": 675,
+												"commercialTotalAmount": 4075,
+												"commercialCurrency": "INR",
+												"commercialFareComponent": "Basic,YQ,RT",
+												"fareBreakUp": {
+													"baseFare": 3220,
+													"taxDetails": [{
+															"taxName": "YQ",
+															"taxValue": 427.5
+														},
+														{
+															"taxName": "RT",
+															"taxValue": 427.5
+														}
+													]
+												}
+											},
+											{
+												"commercialName": "PLB",
+												"commercialInitialAmount": 3800,
+												"commercialCalculationPercentage": 0,
+												"commercialCalculationAmount": 200,
+												"commercialAmount": 200,
+												"commercialTotalAmount": 3600,
+												"commercialCurrency": "INR",
+												"commercialFareComponent": "Total",
+												"fareBreakUp": {
+													"baseFare": 3600,
+													"taxDetails": [{
+															"taxName": "YQ",
+															"taxValue": 475
+														},
+														{
+															"taxName": "RT",
+															"taxValue": 475
+														}
+													]
+												}
+											},
+											{
+												"commercialName": "DestinationIncentive",
+												"commercialInitialAmount": 3800,
+												"commercialCalculationPercentage": 0,
+												"commercialCalculationAmount": 200,
+												"commercialAmount": 200,
+												"commercialTotalAmount": 3600,
+												"commercialCurrency": "INR",
+												"commercialFareComponent": "Total",
+												"fareBreakUp": {
+													"baseFare": 3600,
+													"taxDetails": [{
+															"taxName": "YQ",
+															"taxValue": 475
+														},
+														{
+															"taxName": "RT",
+															"taxValue": 475
+														}
+													]
+												}
+											},
+											{
+												"commercialName": "ServiceCharge",
+												"commercialInitialAmount": 3800,
+												"commercialCalculationPercentage": 0,
+												"commercialCalculationAmount": 200,
+												"commercialAmount": 200,
+												"commercialTotalAmount": 3600,
+												"commercialCurrency": "INR",
+												"commercialFareComponent": "Total",
+												"fareBreakUp": {
+													"baseFare": 3600,
+													"taxDetails": [{
+															"taxName": "YQ",
+															"taxValue": 475
+														},
+														{
+															"taxName": "RT",
+															"taxValue": 475
+														}
+													]
+												}
+											},
+											{
+												"commercialName": "SegmentFees",
+												"commercialInitialAmount": 4000,
+												"commercialCalculationPercentage": 0,
+												"commercialCalculationAmount": 200,
+												"commercialAmount": 200,
+												"commercialTotalAmount": 3800,
+												"commercialCurrency": "INR",
+												"commercialFareComponent": "Total",
+												"fareBreakUp": {
+													"baseFare": 3800,
+													"taxDetails": [{
+															"taxName": "YQ",
+															"taxValue": 500
+														},
+														{
+															"taxName": "RT",
+															"taxValue": 500
+														}
+													]
+												}
+											},
+											{
+												"commercialName": "ManagementFees",
+												"commercialInitialAmount": 3800,
+												"commercialCalculationPercentage": 0,
+												"commercialCalculationAmount": 200,
+												"commercialAmount": 200,
+												"commercialTotalAmount": 3600,
+												"commercialCurrency": "INR",
+												"commercialFareComponent": "Total",
+												"fareBreakUp": {
+													"baseFare": 3600,
+													"taxDetails": [{
+															"taxName": "YQ",
+															"taxValue": 475
+														},
+														{
+															"taxName": "RT",
+															"taxValue": 475
+														}
+													]
+												}
+											}
+										]
+									}
+
+								]
+							}]
+						}]
+					}
+				}
+			}
+		},
+		{
+			"fire-all-rules": {}
+		},
+		{
+			"get-objects": {
+				"out-identifier": "Response"
+			}
+		}
+
+	]
+}</con:request><con:originalUri>http://localhost/kie-server/services/rest/server/containers/instances/ClientTransactionalRules</con:originalUri><con:credentials><con:username>kieserver</con:username><con:password>kieserver1!</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
