@@ -1,0 +1,3647 @@
+{
+    "SupplierCommercialData": {
+        "_id": {
+            "type": "String",
+            "default": null
+        },
+        "commercialDefinition": {
+            "supplierId": {
+                "type": "String"
+            },
+            "productCategory": {
+                "type": "String"
+            },
+            "productCategorySubType": {
+                "type": "String"
+            },
+            "supplierMarkets": [{
+                "type": "String"
+            }],
+            "commercialHead": {
+                "type": "String"
+            }
+        },
+        "standardCommercial": {
+            "commercialInformation": {
+                "commercialType": {
+                    "type": "String"
+                },
+                "commercialDescription": {
+                    "type": "String"
+                },
+                "isProvisional": {
+                    "type": "Boolean"
+                }
+            },
+            "isSettlementTransactionWise": {
+                "type": "Boolean"
+            },
+            "isTransactional": {
+                "type": "Boolean"
+            },
+            "isCommisionable": {
+                "type": "Boolean"
+            },
+            "isFixed": {
+                "type": "Boolean"
+            },
+            "fixed": {
+                "isPercentage": {
+                    "type": "Boolean"
+                },
+                "isAmount": {
+                    "type": "Boolean"
+                },
+                "valueAmount": {
+                    "type": "Number"
+                },
+                "currency": {
+                    "type": "String"
+                },
+                "percentageDetails": [{
+                    "valuePercentage": {
+                        "type": "Number"
+                    },
+                    "farePriceComponents": {
+                        "type": "String"
+                    }
+                }],
+                "unit": {
+                    "type": "String"
+                }
+            },
+            "slab": [{
+                "segments": {
+                    "type": "String"
+                },
+                "isCumulative": {
+                    "type": "Boolean"
+                },
+                "slabType": {
+                    "type": "String"
+                },
+                "currencyDetails": [{
+                    "currency": {
+                        "type": "String"
+                    },
+                    "fromValue": {
+                        "type": "Number"
+                    },
+                    "toValue": {
+                        "type": "Number"
+                    }
+                }],
+                "isPercentage": {
+                    "type": "Boolean"
+                },
+                "isAmount": {
+                    "type": "Boolean"
+                },
+                "percentageDetails": [{
+                    "valuePercentage": {
+                        "type": "Number"
+                    },
+                    "farePriceComponents": {
+                        "type": "String"
+                    }
+                }],
+                "valueAmount": {
+                    "type": "Number"
+                },
+                "currency": {
+                    "type": "String"
+                }
+            }],
+            "calculation": {
+                "calculationType": {
+                    "type": "String"
+                },
+                "netOffCommercialHead": {
+                    "type": "String"
+                },
+                "markDown": {
+                    "applicable": {
+                        "type": "Boolean"
+                    },
+                    "clientType": {
+                        "type": "String"
+                    }
+                },
+                "markUp": {
+                    "minimumPercent": {
+                        "type": "Number"
+                    },
+                    "maximumPercent": {
+                        "type": "Number"
+                    },
+                    "clientType": {
+                        "type": "String"
+                    }
+                }
+            },
+            "clients": [{
+                "clientType": {
+                    "type": "String"
+                },
+                "clientgroup": {
+                    "type": "String"
+                },
+                "clientName": {
+                    "type": "String"
+                }
+            }],
+            "product": {
+                "accommodation": {
+                    "productInformation":[{
+                        "destination": {
+                            "type": "String"
+                        },
+                        "country": {
+                            "type": "String"
+                        },
+                        "city": {
+                            "type": "String"
+                        },
+                        "chain": {
+                            "type": "String"
+                        },
+                        "brand": {
+                            "type": "String"
+                        },
+                        "productName": {
+                            "type": "String"
+                        } 
+                    }],
+                    "supplierRate": [{
+                        "supplierRatetype": {
+                            "type": "String"
+                        },
+                        "supplierRateCode": {
+                            "type": "String"
+                        }
+                    }],
+                    "IATANumbers": [{
+                        "type": "String"
+                    }]
+                },
+                "transportation": {
+                    "product": {
+                        "rail": [{
+                            "ticketThrough": {
+                                "type": "String"
+                            },
+                            "trainCategory": {
+                                "type": "String"
+                            },
+                            "trainName": {
+                                "type": "String"
+                            },
+                            "ticketType": {
+                                "type": "String"
+                            },
+                            "passName": {
+                                "type": "String"
+                            },
+                            "groupMode": {
+                                "type": "String"
+                            },
+                            "fareType": {
+                                "type": "String"
+                            },
+                            "isDomestic": {
+                                "type": "Boolean"
+                            },
+                            "countryDetails": [{
+                                "isInclude": {
+                                    "type": "Boolean"
+                                },
+                                "country": {
+                                    "type": "String"
+                                }
+                            }],
+                            "seatClassNumber": [{
+                                "numberOfPax": {
+                                    "type": "Number"
+                                },
+                                "seatClass": {
+                                    "type": "String"
+                                }
+                            }]
+                        }],
+                        "bus": {
+                            "operators": [{
+                                "type": "String"
+                            }],
+                            "routes": [{
+                                "operatorCountry": {
+                                    "type": "String"
+                                },
+                                "fromCity": {
+                                    "type": "String"
+                                },
+                                "toCity": {
+                                    "type": "String"
+                                }
+                            }]
+                        },
+                        "flight":{
+                            "productId":[
+                                {"type":"String"}
+                            ],
+                            "IATANumbers": [{
+                                "type": "String"
+                            }]
+                        },
+                        "genericProduct":{
+                            "productId":[{"type":"String"}]
+                        }
+                    }
+                },
+                "activities": {
+                    "productInformation": [{
+                        "productCategorySubType": {
+                            "type": "String"
+                        },
+                        "productType": {
+                            "type": "String"
+                        },
+                        "productName": {
+                            "type": "String"
+                        },
+                        "productNameSubType": {
+                            "type": "String"
+                        }
+                    }],
+                    "supplierRate": [{
+                        "supplierRatetype": {
+                            "type": "String"
+                        },
+                        "supplierRateCode": {
+                            "type": "String"
+                        }
+                    }],
+                    "IATANumbers": [{
+                        "type": "String"
+                    }]
+                },
+                "holidays": {
+                    "packageType": {
+                        "type": "String"
+                    },
+                    "products": [{
+                        "productName": {
+                            "type": "String"
+                        },
+                        "productFlavourName": {
+                            "type": "String"
+                        },
+                        "productType": {
+                            "type": "String"
+                        },
+                        "flavourType": {
+                            "type": "String"
+                        },
+                        "brandName": {
+                            "type": "String"
+                        }
+                    }],
+                    "supplierRate": [{
+                        "supplierRatetype": {
+                            "type": "String"
+                        },
+                        "supplierRateCode": {
+                            "type": "String"
+                        }
+                    }]
+                }
+            },
+            "contractValidityFrom": {
+                "type": "Date"
+            },
+            "contractValidityTo": {
+                "type": "Date"
+            },
+            "media": [{
+                "fileCategory": {
+                    "type": "String"
+                },
+                "fileName": {
+                    "type": "String"
+                },
+                "fileDescription": {
+                    "type": "String"
+                },
+                "assetID": {
+                    "type": "String"
+                }
+            }],
+            "advanceDefinationId": {
+                "type": "String"
+            },
+            "policies": [{
+                "type": "String"
+            }],
+            "advanceCommercialsId": [{
+                "type": "String",
+                "ref":"advanceCommercials"
+            }]
+        },
+        "createdBy": {
+            "type": "String"
+        },
+        "createdAt": {
+            "type": "Date"
+        },
+        "updatedBy": {
+            "type": "String"
+        },
+        "lastUpdated": {
+            "type": "Date"
+        },
+        "deleted": {
+            "type": "Boolean"
+        }
+    },
+    "advanceDefinationData" : {
+        "_id": {
+            "type": "String",
+            "default": null
+        },
+        "advanceDefinitionAir": {
+            "validity": {
+                "validityType": {
+                    "type": "String"
+                },
+                "ticketing": [
+                    {
+                        "ticketingFrom": {
+                            "type": "Date"
+                        },
+                        "ticketingTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ],
+                "travel": [
+                    {
+                        "travelFrom": {
+                            "type": "Date"
+                        },
+                        "travelTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ],
+                "ticketingPlusTravel": [
+                    {
+                        "ticket": {
+                            "ticketingFrom": {
+                                "type": "Date"
+                            },
+                            "ticketingTo": {
+                                "type": "Date"
+                            },
+                            "blockOutFrom": {
+                                "type": "Date"
+                            },
+                            "blockOutTo": {
+                                "type": "Date"
+                            }
+                        },
+                        "travel": {
+                            "travelFrom": {
+                                "type": "Date"
+                            },
+                            "travelTo": {
+                                "type": "Date"
+                            },
+                            "blockOutFrom": {
+                                "type": "Date"
+                            },
+                            "blockOutTo": {
+                                "type": "Date"
+                            }
+                        }
+                    }
+                ]
+            },
+            "travelDestination": {
+                "isInclusion": {
+                    "type": "Boolean"
+                },
+                "soldAndTicketingOptions": [
+                    {
+                        "type": "String",
+                        "enum": [
+                            "SITI",
+                            "SITO",
+                            "SOTO",
+                            "SOTI"
+                        ]
+                    }
+                ],
+                "journeyType": [
+                    {
+                        "type": "String",
+                        "enum": [
+                            "One Way",
+                            "Return",
+                            "Multi city"
+                        ]
+                    }
+                ],
+                "isDirectFlights": {
+                    "type": "Boolean"
+                },
+                "isOnline": {
+                    "type": "Boolean"
+                },
+                "codeshareFlightIncluded": {
+                    "type": "Boolean"
+                },
+                "destinations": [
+                    {
+                        "continent": {
+                            "from": {
+                                "type": "String"
+                            },
+                            "via": {
+                                "type": "String"
+                            },
+                            "to": {
+                                "type": "String"
+                            }
+                        },
+                        "country": {
+                            "from": {
+                                "type": "String"
+                            },
+                            "via": {
+                                "type": "String"
+                            },
+                            "to": {
+                                "type": "String"
+                            }
+                        },
+                        "city": {
+                            "from": {
+                                "type": "String"
+                            },
+                            "via": {
+                                "type": "String"
+                            },
+                            "to": {
+                                "type": "String"
+                            }
+                        },
+                        "productId": [
+                            {
+                                "type": "String"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "flightNumbers": {
+                "isInclusion": {
+                    "type": "Boolean"
+                },
+                "flightRange": [
+                    {
+                        "flightRangeFrom": {
+                            "type": "Number"
+                        },
+                        "flightRangeTo": {
+                            "type": "Number"
+                        }
+                    }
+                ]
+            },
+            "flightTimings": {
+                "isInclusion": {
+                    "type": "Boolean"
+                },
+                "flightTimings": [
+                    {
+                        "flightTimeFrom": {
+                            "type": "String"
+                        },
+                        "flightTimeTo": {
+                            "type": "String"
+                        }
+                    }
+                ]
+            },
+            "bookingClass": {
+                "isInclusion": {
+                    "type": "Boolean"
+                },
+                "cabin": [
+                    {
+                        "cabinClass": {
+                            "type": "String"
+                        },
+                        "rbd": {
+                            "type": "String"
+                        }
+                    }
+                ]
+            },
+            "fareClass": {
+                "fareBasis": {
+                    "isInclusion": {
+                        "type": "Boolean"
+                    },
+                    "fare": [
+                        {
+                            "condition": {
+                                "type": "String"
+                            },
+                            "value": {
+                                "type": "String"
+                            }
+                        }
+                    ]
+                },
+                "dealCodes": {
+                    "isInclusion": {
+                        "type": "Boolean"
+                    },
+                    "dealCodes": [
+                        {
+                            "type": "String"
+                        }
+                    ]
+                },
+                "fareTypes": {
+                    "type": "String"
+                }
+            },
+            "connectivity": {
+                "supplierType": {
+                    "type": "String"
+                },
+                "supplierName": {
+                    "type": "String"
+                }
+            },
+            "credentials": [
+                {
+                    "type": "String"
+                }
+            ],
+            "passengerTypes": [
+                {
+                    "type": "String"
+                }
+            ],
+            "others": {
+                "bookingType": {
+                    "type": "String"
+                }
+            }
+        },
+        "advanceDefinitionAccommodation": {
+            "validity": {
+                "validityType": {
+                    "type": "String",
+                    "enum": [
+                        "sale",
+                        "travel",
+                        "sale+travel"
+                    ]
+                },
+                "sale": [
+                    {
+                        "saleFrom": {
+                            "type": "Date"
+                        },
+                        "saleTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ],
+                "travel": [
+                    {
+                        "travelFrom": {
+                            "type": "Date"
+                        },
+                        "travelTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ]
+            },
+            "salePlusTravel": [
+                {
+                    "sales": {
+                        "saleFrom": {
+                            "type": "Date"
+                        },
+                        "saleTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    },
+                    "travel": {
+                        "travelFrom": {
+                            "type": "Date"
+                        },
+                        "travelTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                }
+            ],
+            "travelDestination": {
+                "isInclusion": {
+                    "type": "Boolean"
+                },
+                "destinations": [
+                    {
+                        "continent": {
+                            "type": "String"
+                        },
+                        "country": {
+                            "type": "String"
+                        },
+                        "state": {
+                            "type": "String"
+                        },
+                        "city": {
+                            "type": "String"
+                        }
+                    }
+                ]
+            },
+            "others": {
+                "roomCategories": {
+                    "isInclusion": {
+                        "type": "Boolean"
+                    },
+                    "roomCategories": [
+                        {
+                            "type": "String"
+                        }
+                    ]
+                },
+                "roomTypes": {
+                    "isInclusion": {
+                        "type": "Boolean"
+                    },
+                    "roomTypes": [
+                        {
+                            "type": "String"
+                        }
+                    ]
+                },
+                "bookingType": {
+                    "type": "String"
+                }
+            },
+            "connectivity": {
+                "supplierType": {
+                    "type": "String"
+                },
+                "supplierId": {
+                    "type": "String"
+                }
+            },
+            "credentials": [
+                {
+                    "type": "String"
+                }
+            ],
+            "passengerTypes": [
+                {
+                    "type": "String"
+                }
+            ],
+            "nationality": {
+                "clientNationality": [
+                    {
+                        "type": "String"
+                    }
+                ],
+                "isInclusion": {
+                    "type": "Boolean"
+                }
+            }
+        },
+        "advanceDefinitionAccommodationPLB": {
+            "validity": {
+                "validityType": {
+                    "type": "String",
+                    "enum": [
+                        "sale",
+                        "travel",
+                        "sale+travel"
+                    ]
+                },
+                "sale": [
+                    {
+                        "triggerOrPayout": [
+                            {
+                                "type": "String",
+                                "enum": [
+                                    "trigger",
+                                    "payout"
+                                ]
+                            }
+                        ],
+                        "saleFrom": {
+                            "type": "Date"
+                        },
+                        "saleTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ],
+                "travel": [
+                    {
+                        "triggerOrPayout": [
+                            {
+                                "type": "String",
+                                "enum": [
+                                    "trigger",
+                                    "payout"
+                                ]
+                            }
+                        ],
+                        "travelFrom": {
+                            "type": "Date"
+                        },
+                        "travelTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ],
+                "salePlusTravel": [
+                    {
+                        "triggerOrPayout": [
+                            {
+                                "type": "String",
+                                "enum": [
+                                    "trigger",
+                                    "payout"
+                                ]
+                            }
+                        ],
+                        "sales": {
+                            "saleFrom": {
+                                "type": "Date"
+                            },
+                            "saleTo": {
+                                "type": "Date"
+                            },
+                            "blockOutFrom": {
+                                "type": "Date"
+                            },
+                            "blockOutTo": {
+                                "type": "Date"
+                            }
+                        },
+                        "travel": {
+                            "travelFrom": {
+                                "type": "Date"
+                            },
+                            "travelTo": {
+                                "type": "Date"
+                            },
+                            "blockOutFrom": {
+                                "type": "Date"
+                            },
+                            "blockOutTo": {
+                                "type": "Date"
+                            }
+                        }
+                    }
+                ]
+            },
+            "travelDestination": {
+                "isInclusion": {
+                    "type": "Boolean"
+                },
+                "travel": [
+                    {
+                        "triggerOrPayout": [
+                            {
+                                "type": "String",
+                                "enum": [
+                                    "trigger",
+                                    "payout"
+                                ]
+                            }
+                        ],
+                        "continent": {
+                            "type": "String"
+                        },
+                        "country": {
+                            "type": "String"
+                        },
+                        "state": {
+                            "type": "String"
+                        },
+                        "city": {
+                            "type": "String"
+                        }
+                    }
+                ]
+            },
+            "others": {
+                "isInclusion": {
+                    "type": "Boolean"
+                },
+                "roomCategories": [
+                    {
+                        "triggerOrPayout": [
+                            {
+                                "type": "String",
+                                "enum": [
+                                    "trigger",
+                                    "payout"
+                                ]
+                            }
+                        ],
+                        "roomCategory": {
+                            "type": "String"
+                        }
+                    }
+                ],
+                "roomTypes": [
+                    {
+                        "triggerOrPayout": [
+                            {
+                                "type": "String",
+                                "enum": [
+                                    "trigger",
+                                    "payout"
+                                ]
+                            }
+                        ],
+                        "roomTypes": {
+                            "type": "String"
+                        }
+                    }
+                ],
+                "bookingType": {
+                    "triggerOrPayout": [
+                        {
+                            "type": "String",
+                            "enum": [
+                                "trigger",
+                                "payout"
+                            ]
+                        }
+                    ],
+                    "bookingType": {
+                        "type": "String"
+                    }
+                }
+            },
+            "connectivity": {
+                "triggerOrPayout": [
+                    {
+                        "type": "String",
+                        "enum": [
+                            "trigger",
+                            "payout"
+                        ]
+                    }
+                ],
+                "supplierType": {
+                    "type": "String"
+                },
+                "supplierId": {
+                    "type": "String"
+                }
+            },
+            "credentials": [
+                {
+                    "triggerOrPayout": [
+                        {
+                            "type": "String",
+                            "enum": [
+                                "trigger",
+                                "payout"
+                            ]
+                        }
+                    ],
+                    "credentialId": {
+                        "type": "String"
+                    }
+                }
+            ],
+            "passenger": [
+                {
+                    "triggerOrPayout": [
+                        {
+                            "type": "String",
+                            "enum": [
+                                "trigger",
+                                "payout"
+                            ]
+                        }
+                    ],
+                    "passengerTypes": {
+                        "type": "String"
+                    }
+                }
+            ],
+            "nationality": [
+                {
+                    "triggerOrPayout": [
+                        {
+                            "type": "String",
+                            "enum": [
+                                "trigger",
+                                "payout"
+                            ]
+                        }
+                    ],
+                    "clientNationality": {
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        "advanceDefinitionActivities": {
+            "validity": {
+                "validityType": {
+                    "type": "String",
+                    "enum": [
+                        "sale",
+                        "travel",
+                        "sale+travel"
+                    ]
+                },
+                "sale": [
+                    {
+                        "saleFrom": {
+                            "type": "Date"
+                        },
+                        "saleTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ],
+                "travel": [
+                    {
+                        "travelFrom": {
+                            "type": "Date"
+                        },
+                        "travelTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ],
+                "salePlusTravel": [
+                    {
+                        "sales": {
+                            "saleFrom": {
+                                "type": "Date"
+                            },
+                            "saleTo": {
+                                "type": "Date"
+                            },
+                            "blockOutFrom": {
+                                "type": "Date"
+                            },
+                            "blockOutTo": {
+                                "type": "Date"
+                            }
+                        },
+                        "travel": {
+                            "travelFrom": {
+                                "type": "Date"
+                            },
+                            "travelTo": {
+                                "type": "Date"
+                            },
+                            "blockOutFrom": {
+                                "type": "Date"
+                            },
+                            "blockOutTo": {
+                                "type": "Date"
+                            }
+                        }
+                    }
+                ]
+            },
+            "travelDestination": {
+                "isInclusion": {
+                    "type": "Boolean"
+                },
+                "destinations": [
+                    {
+                        "continent": {
+                            "type": "String"
+                        },
+                        "country": {
+                            "type": "String"
+                        },
+                        "state": {
+                            "type": "String"
+                        },
+                        "city": {
+                            "type": "String"
+                        }
+                    }
+                ]
+            },
+            "others": {
+                "bookingType": {
+                    "type": "String"
+                }
+            },
+            "connectivity": {
+                "supplierType": {
+                    "type": "String"
+                },
+                "supplierId": {
+                    "type": "String"
+                }
+            },
+            "credentials": [
+                {
+                    "type": "String"
+                }
+            ],
+            "passengerTypes": [
+                {
+                    "type": "String"
+                }
+            ],
+            "nationality": {
+                "clientNationality": [
+                    {
+                        "type": "String"
+                    }
+                ]
+            }
+        },
+        "advanceDefinitionTransportation": {
+            "validity": {
+                "validityType": {
+                    "type": "String",
+                    "enum": [
+                        "sale",
+                        "travel",
+                        "sale+travel"
+                    ]
+                },
+                "sale": [
+                    {
+                        "saleFrom": {
+                            "type": "Date"
+                        },
+                        "saleTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ],
+                "travel": [
+                    {
+                        "travelFrom": {
+                            "type": "Date"
+                        },
+                        "travelTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ],
+                "salePlusTravel": [
+                    {
+                        "sales": {
+                            "saleFrom": {
+                                "type": "Date"
+                            },
+                            "saleTo": {
+                                "type": "Date"
+                            },
+                            "blockOutFrom": {
+                                "type": "Date"
+                            },
+                            "blockOutTo": {
+                                "type": "Date"
+                            }
+                        },
+                        "travel": {
+                            "travelFrom": {
+                                "type": "Date"
+                            },
+                            "travelTo": {
+                                "type": "Date"
+                            },
+                            "blockOutFrom": {
+                                "type": "Date"
+                            },
+                            "blockOutTo": {
+                                "type": "Date"
+                            }
+                        }
+                    }
+                ]
+            },
+            "travelDestination": {
+                "isInclusion": {
+                    "type": "Boolean"
+                },
+                "destinations": [
+                    {
+                        "continent": {
+                            "type": "String"
+                        },
+                        "country": {
+                            "type": "String"
+                        },
+                        "state": {
+                            "type": "String"
+                        },
+                        "city": {
+                            "type": "String"
+                        }
+                    }
+                ]
+            },
+            "others": {
+                "bookingType": {
+                    "type": "String"
+                }
+            },
+            "connectivity": {
+                "supplierType": {
+                    "type": "String"
+                },
+                "supplierId": {
+                    "type": "String"
+                }
+            },
+            "credentials": [
+                {
+                    "type": "String"
+                }
+            ],
+            "passengerTypes": [
+                {
+                    "type": "String"
+                }
+            ],
+            "nationality": {
+                "clientNationality": [
+                    {
+                        "type": "String"
+                    }
+                ]
+            },
+            "vehicleDetails": {
+                "isInclusion": {
+                    "type": "Boolean"
+                },
+                "vehicles": [
+                    {
+                        "sippOrACRISScode": {
+                            "type": "String"
+                        },
+                        "vehicleCategory": {
+                            "type": "String"
+                        },
+                        "vehicleName": {
+                            "type": "String"
+                        }
+                    }
+                ]
+            },
+            "rateTypeApplicableFor": {
+                "type": "String"
+            },
+            "category": {
+                "type": "String"
+            },
+            "isPrepaid": {
+                "type": "Boolean"
+            }
+        },
+        "advanceDefinitionHolidays": {
+            "validity": {
+                "saleOrTravel": {
+                    "type": "String",
+                    "enum": [
+                        "sales",
+                        "travel"
+                    ]
+                },
+                "sales": [
+                    {
+                        "saleFrom": {
+                            "type": "Date"
+                        },
+                        "saleTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ],
+                "travelSales": [
+                    {
+                        "travelFrom": {
+                            "type": "Date"
+                        },
+                        "travelTo": {
+                            "type": "Date"
+                        },
+                        "blockOutFrom": {
+                            "type": "Date"
+                        },
+                        "blockOutTo": {
+                            "type": "Date"
+                        }
+                    }
+                ]
+            },
+            "travelDestinations": [
+                {
+                    "destination": {
+                        "type": "String"
+                    },
+                    "country": {
+                        "type": "String"
+                    },
+                    "state": {
+                        "type": "String"
+                    },
+                    "city": {
+                        "type": "String"
+                    }
+                }
+            ],
+            "roomLevel": {
+                "roomCategories": [
+                    {
+                        "type": "String"
+                    }
+                ],
+                "roomTypes": [
+                    {
+                        "type": "String"
+                    }
+                ],
+                "bookingType": {
+                    "type": "String"
+                }
+            },
+            "connectivity": {
+                "supplierType": {
+                    "type": "String"
+                },
+                "supplierId": {
+                    "type": "String"
+                }
+            },
+            "credentials": [
+                {
+                    "type": "String"
+                }
+            ],
+            "nationality": {
+                "clientNationality": [
+                    {
+                        "type": "String"
+                    }
+                ]
+            },
+            "passengerType": {
+                "passengerType": [
+                    {
+                        "type": "String"
+                    }
+                ]
+            },
+            "applicableOn": [
+                {
+                    "type": "String",
+                    "enum": [
+                        "Extension Nights",
+                        "Flights",
+                        "Cancellation Charges",
+                        "Optional Tours",
+                        "Trip Protection",
+                        "Supplement",
+                        "Surcharge",
+                        "Upgrade"
+                    ]
+                }
+            ],
+            "tourTypes": [
+                {
+                    "type": "String"
+                }
+            ]
+        },
+        "createdBy": {
+            "type": "String"
+        },
+        "createdAt": {
+            "type": "Date"
+        },
+        "updatedBy": {
+            "type": "String"
+        },
+        "lastUpdated": {
+            "type": "Date"
+        },
+        "deleted": {
+            "type": "Boolean"
+        }
+    }, 
+    "advanceCommercialData"  : {        
+        "_id": {
+            "type": "String",
+            "default": null
+        },
+        "advanceCommercial": {
+            "commercialHeadInfo": {
+                "groupName": {
+                    "type": "String"
+                },
+                "displayName": {
+                    "type": "String"
+                }
+            },
+            "commercialId": {
+                "type": "String"
+            },
+            "signupBonus": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "signupBonus": {
+                    "currency": {
+                        "type": "String"
+                    },
+                    "value": {
+                        "type": "Number"
+                    }
+                },
+                "signupBonusCriteria": [{
+                    "slabType": {
+                        "type": "String"
+                    },
+                    "targetFrom": {
+                        "type": "Number"
+                    },
+                    "targetTo": {
+                        "type": "Number"
+                    },
+                    "periodFrom": {
+                        "type": "Date"
+                    },
+                    "periodTo": {
+                        "type": "Date"
+                    }
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }]
+            },
+            "otherFees": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "isRefundable": {
+                    "type": "Boolean"
+                },
+                "frequency": {
+                    "type": "String"
+                },
+                "isFixed": {
+                    "type": "Boolean"
+                },
+                "fixed": {
+                    "currency": {
+                        "type": "String"
+                    },
+                    "value": {
+                        "type": "Number"
+                    },
+                    "noOfLicenses": {
+                        "type": "Number"
+                    }
+                },
+                "percentage": [{
+                    "appliedOnCommercialHead": {
+                        "type": "String"
+                    },
+                    "percent": {
+                        "type": "Number"
+                    },
+                    "from": {
+                        "type": "Date"
+                    },
+                    "to": {
+                        "type": "Date"
+                    }
+                }],
+                "applyOn": [{
+                    "productCategory": {
+                        "type": "String"
+                    },
+                    "productCategorySubType": {
+                        "type": "String"
+                    }
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinationId": {
+                    "type": "String"
+                }
+            },
+            "lookToBook": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "isLTBbyRatio": {
+                    "type": "Boolean"
+                },
+                "LTBbyRatio": [{
+                    "lookRatio": {
+                        "from": {
+                            "type": "Number"
+                        },
+                        "to": {
+                            "type": "Number"
+                        }
+                    },
+                    "bookRatio": {
+                        "type": "Number"
+                    },
+                    "amountPerExcessLook": {
+                        "currency": {
+                            "type": "String"
+                        },
+                        "amount": {
+                            "type": "Number"
+                        }
+                    }
+                }],
+                "LTBbyRate": {
+                    "ratePerLook": {
+                        "currency": {
+                            "type": "String"
+                        },
+                        "amount": {
+                            "type": "Number"
+                        }
+                    },
+                    "ratePerBook": {
+                        "currency": {
+                            "type": "String"
+                        },
+                        "amount": {
+                            "type": "Number"
+                        }
+                    }
+                },
+                "waiver": {
+                    "LBWaiverfrom": {
+                        "type": "Date"
+                    },
+                    "LBWaiverTo": {
+                        "type": "Date"
+                    }
+                },
+                "products": [{
+                    "productId": {
+                        "type": "String"
+                    },
+                    "chain": {
+                        "type": "String"
+                    },
+                    "brand": {
+                        "type": "String"
+                    },
+                    "productCategorySubType": {
+                        "type": "String"
+                    },
+                    "productNameSubtype": {
+                        "type": "String"
+                    }
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }]
+            },
+            "incentiveOnTopup": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "topUpAmount": [{
+                    "modeOfPayment": {
+                        "type": "String"
+                    },
+                    "bankName": {
+                        "type": "String"
+                    },
+                    "currency": {
+                        "type": "String"
+                    },
+                    "amount": {
+                        "type": "Number"
+                    },
+                    "incentivesInPercentage": {
+                        "type": "Number"
+                    }
+                }],
+                "isSingleTopUp": {
+                    "type": "Boolean"
+                },
+                "periodForTopUp": {
+                    "type": "String"
+                },
+                "periodicity": {
+                    "daily": [{
+                        "hour": {
+                            "type": "Number"
+                        },
+                        "minute": {
+                            "type": "Number"
+                        }
+                    }],
+                    "weekly": [{
+                        "type": "String"
+                    }],
+                    "fortnightly": [{
+                        "day1": {
+                            "type": "Number"
+                        },
+                        "day2": {
+                            "type": "Number"
+                        },
+                        "repeatEvery": {
+                            "type": "Number"
+                        }
+                    }],
+                    "monthly": {
+                        "option1": {
+                            "day": {
+                                "type": "Number"
+                            },
+                            "repeatEvery": {
+                                "type": "Number"
+                            }
+                        },
+                        "option2": {
+                            "weekOfMonth": {
+                                "type": "Number"
+                            },
+                            "dayOfWeek": {
+                                "type": "String"
+                            },
+                            "repeatEvery": {
+                                "type": "Number"
+                            }
+                        }
+                    }
+                },
+                "rateType": [{
+                    "supplierRateType": {
+                        "type": "String"
+                    },
+                    "supplierRateCode": {
+                        "type": "String"
+                    }
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }]
+            },
+            "remittanceFees": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "isFixed": {
+                    "type": "Boolean"
+                },
+                "fixed": {
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "percent": {
+                        "type": "Number"
+                    },
+                    "amount": {
+                        "currency": {
+                            "type": "String"
+                        },
+                        "value": {
+                            "type": "Number"
+                        }
+                    }
+                },
+                "slabs": [{
+                    "currency": {
+                        "type": "String"
+                    },
+                    "transactionFromValue": {
+                        "type": "Number"
+                    },
+                    "transactionToValue": {
+                        "type": "Number"
+                    },
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "percentage": {
+                        "type": "Number"
+                    },
+                    "amount": {
+                        "currency": {
+                            "type": "String"
+                        },
+                        "value": {
+                            "type": "Number"
+                        }
+                    }
+                }],
+                "effectiveFrom": {
+                    "type": "Date"
+                },
+                "effectiveTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }]
+            },
+            "terminationFees": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "payable": {
+                    "fixed": {
+                        "type": "Boolean"
+                    },
+                    "returnOfPayable": {
+                        "type": "Boolean"
+                    }
+                },
+                "fixed": {
+                    "currency": {
+                        "type": "String"
+                    },
+                    "value": {
+                        "type": "Number"
+                    }
+                },
+                "returnOfPayable": [{
+                    "commercialHead": {
+                        "type": "String"
+                    },
+                    "fromPeriod": {
+                        "type": "Date"
+                    },
+                    "toDate": {
+                        "type": "Date"
+                    },
+                    "interestOnAmount": {
+                        "type": "Number"
+                    }
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }]
+            },
+            "penaltyFeeOrKickBack": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "penaltyCriteria": [{
+                    "condition": {
+                        "slabType": {
+                            "type": "String"
+                        },
+                        "targetFrom": {
+                            "type": "Number"
+                        },
+                        "targetTo": {
+                            "type": "Number"
+                        },
+                        "minimumPercentToAchieve": {
+                            "from": {
+                                "type": "Number"
+                            },
+                            "to": {
+                                "type": "Number"
+                            }
+                        },
+                        "achievementPeriod": {
+                            "type": "String"
+                        },
+                        "periodFrom": {
+                            "type": "Date"
+                        },
+                        "periodTo": {
+                            "type": "Date"
+                        }
+                    },
+                    "penalty": {
+                        "isTransactionWise": {
+                            "type": "Boolean"
+                        },
+                        "isPercentage": {
+                            "type": "Boolean"
+                        },
+                        "percent": {
+                            "slabType": {
+                                "type": "String"
+                            },
+                            "percent": {
+                                "type": "Number"
+                            }
+                        },
+                        "amount": {
+                            "currency": {
+                                "type": "String"
+                            },
+                            "value": {
+                                "type": "Number"
+                            }
+                        }
+                    }
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }]
+            },
+            "MSfFees": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "fixed": {
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "isAmount": {
+                        "type": "Boolean"
+                    },
+                    "percentage": {
+                        "value": {
+                            "type": "Number"
+                        }
+                    },
+                    "amount": {
+                        "currency": {
+                            "type": "String"
+                        },
+                        "value": {
+                            "type": "Number"
+                        }
+                    },
+                    "isServiceTaxApplied": {
+                        "type": "Boolean"
+                    }
+                },
+                "paymentRule": {
+                    "transactionType": {
+                        "type": "String"
+                    },
+                    "paymentType": [{
+                        "type": "String"
+                    }],
+                    "MSFchargesType": {
+                        "type": "String"
+                    },
+                    "cardTypes": [{
+                        "type": "String"
+                    }]
+                },
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }]
+            },
+            "freeOfCostFlights": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "isPLBApplicable": {
+                    "type": "Boolean"
+                },
+                "isSlab": {
+                    "type": "Boolean"
+                },
+                "slabOrRunning": [{
+                    "slab": {
+                        "slabType": {
+                            "type": "String"
+                        },
+                        "cabinClass": {
+                            "type": "String"
+                        },
+                        "fromValue": {
+                            "type": "Number"
+                        },
+                        "toValue": {
+                            "type": "Number"
+                        }
+                    },
+                    "running": {
+                        "every": {
+                            "type": "Number"
+                        },
+                        "typeIs": {
+                            "type": "String"
+                        },
+                        "cabinClass": {
+                            "type": "String"
+                        }
+                    },
+                    "isfreeOfCostTicket": {
+                        "type": "Boolean"
+                    },
+                    "freeOfCostTickets": {
+                        "cabinClass": {
+                            "type": "String"
+                        },
+                        "rbd": {
+                            "type": "String"
+                        },
+                        "noOfTickets": {
+                            "type": "Number"
+                        },
+                        "freeOfCostPercent": {
+                            "type": "Number"
+                        },
+                        "fareComponents": [{
+                            "type": "String"
+                        }]
+                    },
+                    "freeOfCostUpgrades": {
+                        "upgradeToCabinClass": {
+                            "type": "String"
+                        },
+                        "rbd": {
+                            "type": "String"
+                        },
+                        "noOfUpgrades": {
+                            "type": "Number"
+                        },
+                        "freeOfCostPercent": {
+                            "type": "Number"
+                        },
+                        "fareComponents": [{
+                            "type": "String"
+                        }]
+                    },
+                    "product": [{
+                        "type": "String"
+                    }],
+                    "client": [{
+                        "clientType": {
+                            "type": "String"
+                        },
+                        "clientGroup": {
+                            "type": "String"
+                        },
+                        "clientName": {
+                            "type": "String"
+                        }
+                    }],
+                    "IATANumbers": [{
+                        "type": "String"
+                    }]
+                }],
+                "freeOfCostUtilization": [{
+                    "productCategory": {
+                        "type": "String"
+                    },
+                    "productCategorySubType": {
+                        "type": "String"
+                    },
+                    "productId": {
+                        "type": "String"
+                    }
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinitionId": {
+                    "type": "String"
+                }
+            },
+            "freeOfCostAccommodation": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    },
+                    "isPLBApplicable": {
+                        "type": "Boolean"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "isSlab": {
+                    "type": "Boolean"
+                },
+                "slabOrRunning": [{
+                    "slab": {
+                        "slabType": {
+                            "type": "String"
+                        },
+                        "roomCategory": {
+                            "type": "String"
+                        },
+                        "fromValue": {
+                            "type": "Number"
+                        },
+                        "toValue": {
+                            "type": "Number"
+                        }
+                    },
+                    "running": {
+                        "every": {
+                            "type": "String"
+                        },
+                        "typeIs": {
+                            "type": "String"
+                        },
+                        "roomCategory": {
+                            "type": "String"
+                        }
+                    },
+                    "isfreeOfCostRooms": {
+                        "type": "Boolean"
+                    },
+                    "freeOfCostRoom": {
+                        "roomCategory": {
+                            "type": "String"
+                        },
+                        "roomType": {
+                            "type": "String"
+                        },
+                        "noOfRooms": {
+                            "type": "Number"
+                        },
+                        "freeOfCostPercent": {
+                            "type": "Number"
+                        },
+                        "priceComponents": [{
+                            "type": "String"
+                        }]
+                    },
+                    "freeOfCostUpgrades": {
+                        "upgradeToRoomCategory": {
+                            "type": "String"
+                        },
+                        "noOfUpgrades": {
+                            "type": "Number"
+                        },
+                        "freeOfCostPercent": {
+                            "type": "Number"
+                        },
+                        "priceComponents": [{
+                            "type": "String"
+                        }]
+                    },
+                    "products": [{
+                        "chain": {
+                            "type": "String"
+                        },
+                        "brand": {
+                            "type": "String"
+                        },
+                        "productId": {
+                            "type": "String"
+                        }
+                    }],
+                    "client": [{
+                        "clientType": {
+                            "type": "String"
+                        },
+                        "clientGroup": {
+                            "type": "String"
+                        },
+                        "clientName": {
+                            "type": "String"
+                        }
+                    }],
+                    "supplierRate": [{
+                        "supplierRatetype": {
+                            "type": "String"
+                        },
+                        "supplierRateCode": {
+                            "type": "String"
+                        }
+                    }]
+                }],
+                "freeOfCostUtilization": [{
+                    "productCategory": {
+                        "type": "String"
+                    },
+                    "productCategorySubType": {
+                        "type": "String"
+                    },
+                    "productId": {
+                        "type": "String"
+                    }
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinitionId": {
+                    "type": "String"
+                }
+            },
+            "freeOfCostActivities": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "isPLBApplicable": {
+                    "type": "Boolean"
+                },
+                "isSlab": {
+                    "type": "Boolean"
+                },
+                "slabsOrRunning": [{
+                    "slab": {
+                        "slabType": {
+                            "type": "String"
+                        },
+                        "fromValue": {
+                            "type": "Number"
+                        },
+                        "toValue": {
+                            "type": "Number"
+                        }
+                    },
+                    "running": {
+                        "every": {
+                            "type": "String"
+                        },
+                        "typeIs": {
+                            "type": "String"
+                        }
+                    },
+                    "freeOfCost": [{
+                        "noOfFree": {
+                            "type": "Number"
+                        },
+                        "freeOfCostPercent": {
+                            "type": "Number"
+                        },
+                        "priceComponents": {
+                            "type": "String"
+                        }
+                    }],
+                    "productInformation": [{
+                        "productCategorySubType": {
+                            "type": "String"
+                        },
+                        "productType": {
+                            "type": "String"
+                        },
+                        "productId": {
+                            "type": "String"
+                        },
+                        "productNameSubtype": {
+                            "type": "String"
+                        }
+                    }],
+                    "client": [{
+                        "clientType": {
+                            "type": "String"
+                        },
+                        "clientGroup": {
+                            "type": "String"
+                        },
+                        "clientName": {
+                            "type": "String"
+                        }
+                    }],
+                    "supplierRate": [{
+                        "supplierRatetype": {
+                            "type": "String"
+                        },
+                        "supplierRateCode": {
+                            "type": "String"
+                        }
+                    }],
+                    "IATANos": [{
+                        "type": "String"
+                    }]
+                }],
+                "freeOfCostUtilization": [{
+                    "productCategory": {
+                        "type": "String"
+                    },
+                    "productCategorySubType": {
+                        "type": "String"
+                    },
+                    "productId": {
+                        "type": "String"
+                    }
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "policies": [{
+                    "type": "String"
+                }],
+                "advanceDefinitionId": {
+                    "type": "String"
+                }
+            },
+            "freeOfCostHolidays": {
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "isPLBApplicable": {
+                    "type": "Boolean"
+                },
+                "isSupplierPackage": {
+                    "type": "Boolean"
+                },
+                "isSlab": {
+                    "type": "Boolean"
+                },
+                "slabsOrRunning": [{
+                    "slab": {
+                        "slabType": {
+                            "type": "String"
+                        },
+                        "roomCategory": {
+                            "type": "String"
+                        },
+                        "fromValue": {
+                            "type": "Number"
+                        },
+                        "toValue": {
+                            "type": "Number"
+                        }
+                    },
+                    "running": {
+                        "every": {
+                            "type": "Number"
+                        },
+                        "typeIs": {
+                            "type": "String"
+                        },
+                        "roomCategory": {
+                            "type": "String"
+                        }
+                    },
+                    "isFreeOfCostRooms": {
+                        "type": "Boolean"
+                    },
+                    "freeOfCostRoom": {
+                        "roomCategory": {
+                            "type": "String"
+                        },
+                        "roomType": {
+                            "type": "String"
+                        },
+                        "noOfRooms": {
+                            "type": "Number"
+                        },
+                        "freeOfCostPercent": {
+                            "type": "Number"
+                        },
+                        "priceComponents": [{
+                            "type": "String"
+                        }]
+                    },
+                    "freeOfCostUpgrades": {
+                        "upgradeToRoomCategory": {
+                            "type": "String"
+                        },
+                        "noOfUpgrades": {
+                            "type": "Number"
+                        },
+                        "freeOfCostPercent": {
+                            "type": "Number"
+                        },
+                        "priceComponents": [{
+                            "type": "String"
+                        }]
+                    },
+                    "productInformation": [{
+                        "productCategorySubType": {
+                            "type": "String"
+                        },
+                        "productType": {
+                            "type": "String"
+                        },
+                        "productId": {
+                            "type": "String"
+                        },
+                        "productNameSubType": {
+                            "type": "String"
+                        }
+                    }],
+                    "client": [{
+                        "clientType": {
+                            "type": "String"
+                        },
+                        "clientGroup": {
+                            "type": "String"
+                        },
+                        "clientName": {
+                            "type": "String"
+                        }
+                    }],
+                    "supplierRate": [{
+                        "supplierRatetype": {
+                            "type": "String"
+                        },
+                        "supplierRateCode": {
+                            "type": "String"
+                        }
+                    }]
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinitionId": {
+                    "type": "String"
+                }
+            },
+            "overRidingCommission": {
+                "type": {
+                    "type": "String",
+                    "enum": [
+                        "Air",
+                        "Non - Air"
+                    ]
+                },
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "calculationType": {
+                    "type": "String",
+                    "enum": [
+                        "slab",
+                        "fixed"
+                    ]
+                },
+                "fixed": {
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "isAmount": {
+                        "type": "Boolean"
+                    },
+                    "valueAmount": {
+                        "type": "Number"
+                    },
+                    "currency": {
+                        "type": "String"
+                    },
+                    "percentageDetails": [{
+                        "valuePercentage": {
+                            "type": "Number"
+                        },
+                        "farePriceComponents": {
+                            "type": "String"
+                        }
+                    }]
+                },
+                "slab": [{
+                    "isCumulative": {
+                        "type": "Boolean"
+                    },
+                    "slabType": {
+                        "type": "String"
+                    },
+                    "currencyDetails": [{
+                        "currency": {
+                            "type": "String"
+                        },
+                        "fromValue": {
+                            "type": "Number"
+                        },
+                        "toValue": {
+                            "type": "Number"
+                        }
+                    }],
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "isAmount": {
+                        "type": "Boolean"
+                    },
+                    "valueAmount": {
+                        "type": "Number"
+                    },
+                    "currency": {
+                        "type": "String"
+                    },
+                    "percentageDetails": [{
+                        "valuePercentage": {
+                            "type": "Number"
+                        },
+                        "farePriceComponents": {
+                            "type": "String"
+                        }
+                    }]
+                }],
+                "product": [{
+                    "productId": {
+                        "type": "String"
+                    },
+                    "chain": {
+                        "type": "String"
+                    },
+                    "brand": {
+                        "type": "String"
+                    }
+                }],
+                "calculation": {
+                    "calculationType": {
+                        "type": "String"
+                    },
+                    "netOffCommercialHead": {
+                        "type": "String"
+                    }
+                },
+                "client": [{
+                    "clientType": {
+                        "type": "String"
+                    },
+                    "clientgroup": {
+                        "type": "String"
+                    },
+                    "clientName": {
+                        "type": "String"
+                    }
+                }],
+                "supplierRate": [{
+                    "supplierRatetype": {
+                        "type": "String"
+                    },
+                    "supplierRateCode": {
+                        "type": "String"
+                    }
+                }],
+                "IATANumbers": [{
+                    "type": "String"
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinationId": {
+                    "type": "String"
+                },
+                "policies": [{
+                    "type":"String"
+                }]
+            },
+            "plb": {
+                "type": {
+                    "type": "String",
+                    "enum": [
+                        "Air",
+                        "Non - Air"
+                    ]
+                },
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "slab": [{
+                    "isCumulative": {
+                        "type": "Boolean"
+                    },
+                    "slabType": {
+                        "type": "String"
+                    },
+                    "currencyDetails": [{
+                        "currency": {
+                            "type": "String"
+                        },
+                        "fromValue": {
+                            "type": "Number"
+                        },
+                        "toValue": {
+                            "type": "Number"
+                        }
+                    }],
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "isAmount": {
+                        "type": "Boolean"
+                    },
+                    "valueAmount": {
+                        "type": "Number"
+                    },
+                    "currency": {
+                        "type": "String"
+                    },
+                    "percentageDetails": [{
+                        "valuePercentage": {
+                            "type": "Number"
+                        },
+                        "farePriceComponents": {
+                            "type": "String"
+                        }
+                    }]
+                }],
+                "product": [{
+                    "productId": {
+                        "type": "String"
+                    },
+                    "chain": {
+                        "type": "String"
+                    },
+                    "brand": {
+                        "type": "String"
+                    }
+                }],
+                "calculation": {
+                    "calculationType": {
+                        "type": "String"
+                    },
+                    "netOffCommercialHead": {
+                        "type": "String"
+                    }
+                },
+                "client": [{
+                    "clientType": {
+                        "type": "String"
+                    },
+                    "clientgroup": {
+                        "type": "String"
+                    },
+                    "clientName": {
+                        "type": "String"
+                    }
+                }],
+                "supplierRate": [{
+                    "supplierRatetype": {
+                        "type": "String"
+                    },
+                    "supplierRateCode": {
+                        "type": "String"
+                    }
+                }],
+                "IATANumbers": [{
+                    "type": "String"
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinationId": {
+                    "type": "String"
+                },
+                "policies": [{
+                    "type":"String"
+                }]
+            },
+            "destinationIncentives": {
+                "type": {
+                    "type": "String",
+                    "enum": [
+                        "nonair"
+                    ]
+                },
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "slab": [{
+                    "isCumulative": {
+                        "type": "Boolean"
+                    },
+                    "slabType": {
+                        "type": "String"
+                    },
+                    "currencyDetails": [{
+                        "currency": {
+                            "type": "String"
+                        },
+                        "fromValue": {
+                            "type": "Number"
+                        },
+                        "toValue": {
+                            "type": "Number"
+                        }
+                    }],
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "isAmount": {
+                        "type": "Boolean"
+                    },
+                    "valueAmount": {
+                        "type": "Number"
+                    },
+                    "currency": {
+                        "type": "String"
+                    },
+                    "percentageDetails": [{
+                        "valuePercentage": {
+                            "type": "Number"
+                        },
+                        "farePriceComponents": {
+                            "type": "String"
+                        }
+                    }]
+                }],
+                "product": [{
+                    "productId": {
+                        "type": "String"
+                    },
+                    "chain": {
+                        "type": "String"
+                    },
+                    "brand": {
+                        "type": "String"
+                    }
+                }],
+                "calculation": {
+                    "calculationType": {
+                        "type": "String"
+                    },
+                    "netOffCommercialHead": {
+                        "type": "String"
+                    }
+                },
+                "client": [{
+                    "clientType": {
+                        "type": "String"
+                    },
+                    "clientgroup": {
+                        "type": "String"
+                    },
+                    "clientName": {
+                        "type": "String"
+                    }
+                }],
+                "supplierRate": [{
+                    "supplierRatetype": {
+                        "type": "String"
+                    },
+                    "supplierRateCode": {
+                        "type": "String"
+                    }
+                }],
+                "IATANumbers": [{
+                    "type": "String"
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinationId": {
+                    "type": "String"
+                },
+                "policies": [{
+                    "type":"String"
+                }]
+            },
+            "sectorWiseIncentives": {
+                "type": {
+                    "type": "String",
+                    "enum": [
+                        "air"
+                    ]
+                },
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "slab": [{
+                    "isCumulative": {
+                        "type": "Boolean"
+                    },
+                    "slabType": {
+                        "type": "String"
+                    },
+                    "currencyDetails": [{
+                        "currency": {
+                            "type": "String"
+                        },
+                        "fromValue": {
+                            "type": "Number"
+                        },
+                        "toValue": {
+                            "type": "Number"
+                        }
+                    }],
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "isAmount": {
+                        "type": "Boolean"
+                    },
+                    "valueAmount": {
+                        "type": "Number"
+                    },
+                    "currency": {
+                        "type": "String"
+                    },
+                    "percentageDetails": [{
+                        "valuePercentage": {
+                            "type": "Number"
+                        },
+                        "farePriceComponents": {
+                            "type": "String"
+                        }
+                    }]
+                }],
+                "product": [{
+                    "productId": {
+                        "type": "String"
+                    }
+                }],
+                "calculation": {
+                    "calculationType": {
+                        "type": "String"
+                    },
+                    "netOffCommercialHead": {
+                        "type": "String"
+                    }
+                },
+                "client": [{
+                    "clientType": {
+                        "type": "String"
+                    },
+                    "clientgroup": {
+                        "type": "String"
+                    },
+                    "clientName": {
+                        "type": "String"
+                    }
+                }],
+                "IATANumbers": [{
+                    "type": "String"
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinationId": {
+                    "type": "String"
+                },
+                "policies": [{
+                    "type":"String"
+                }]
+            },
+            "segmentFees": {
+                "type": {
+                    "type": "String",
+                    "enum": [
+                        "air",
+                        "non air"
+                    ]
+                },
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "slab": [{
+                    "isCumulative": {
+                        "type": "Boolean"
+                    },
+                    "segments": {
+                        "type": "String"
+                    },
+                    "slabType": {
+                        "type": "String"
+                    },
+                    "currencyDetails": [{
+                        "currency": {
+                            "type": "String"
+                        },
+                        "fromValue": {
+                            "type": "Number"
+                        },
+                        "toValue": {
+                            "type": "Number"
+                        }
+                    }],
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "isAmount": {
+                        "type": "Boolean"
+                    },
+                    "valueAmount": {
+                        "type": "Number"
+                    },
+                    "currency": {
+                        "type": "String"
+                    },
+                    "percentageDetails": [{
+                        "valuePercentage": {
+                            "type": "Number"
+                        },
+                        "farePriceComponents": {
+                            "type": "String"
+                        }
+                    }]
+                }],
+                "product": [{
+                    "productId": {
+                        "type": "String"
+                    },
+                    "chain": {
+                        "type": "String"
+                    },
+                    "brand": {
+                        "type": "String"
+                    }
+                }],
+                "calculation": {
+                    "calculationType": {
+                        "type": "String"
+                    },
+                    "netOffCommercialHead": {
+                        "type": "String"
+                    }
+                },
+                "client": [{
+                    "clientType": {
+                        "type": "String"
+                    },
+                    "clientgroup": {
+                        "type": "String"
+                    },
+                    "clientName": {
+                        "type": "String"
+                    }
+                }],
+                "supplierRate": [{
+                    "supplierRatetype": {
+                        "type": "String"
+                    },
+                    "supplierRateCode": {
+                        "type": "String"
+                    }
+                }],
+                "IATANumbers": [{
+                    "type": "String"
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinationId": {
+                    "type": "String"
+                },
+                "policies": [{
+                    "type":"String"
+                }]
+            },
+            "issuanceFees": {
+                "type": {
+                    "type": "String",
+                    "enum": [
+                        "air",
+                        "rail"
+                    ]
+                },
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "isSettlementTransactionWise": {
+                    "type": "Boolean"
+                },
+                "isFixed": {
+                    "type": "Boolean"
+                },
+                "fixed": {
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "isAmount": {
+                        "type": "Boolean"
+                    },
+                    "valueAmount": {
+                        "type": "Number"
+                    },
+                    "currency": {
+                        "type": "String"
+                    },
+                    "percentageDetails": [{
+                        "valuePercentage": {
+                            "type": "Number"
+                        },
+                        "farePriceComponents": {
+                            "type": "String"
+                        }
+                    }],
+                    "unit": {
+                        "type": "String"
+                    }
+                },
+                "product": [{
+                    "productId": {
+                        "type": "String"
+                    },
+                    "ticketThrough": {
+                        "type": "String",
+                        "enum": [
+                            "Online",
+                            "Offline",
+                            "Both"
+                        ]
+                    },
+                    "trainCategory": {
+                        "type": "String"
+                    },
+                    "trainName": {
+                        "type": "String"
+                    },
+                    "productCategory": {
+                        "type": "String"
+                    },
+                    "fareType": {
+                        "type": "String"
+                    },
+                    "fareSubType": {
+                        "type": "String"
+                    },
+                    "seatClassNumber": [{
+                        "noOfPerson": {
+                            "type": "String"
+                        },
+                        "seatClass": {
+                            "type": "String"
+                        }
+                    }],
+                    "otherDetail": [{
+                        "isDomestic": {
+                            "type": "Boolean"
+                        },
+                        "isInclude": {
+                            "type": "Boolean"
+                        },
+                        "country": {
+                            "type": "String"
+                        }
+                    }]
+                }],
+                "calculation": {
+                    "calculationType": {
+                        "type": "String"
+                    },
+                    "netOffCommercialHead": {
+                        "type": "String"
+                    }
+                },
+                "client": [{
+                    "clientType": {
+                        "type": "String"
+                    },
+                    "clientgroup": {
+                        "type": "String"
+                    },
+                    "clientName": {
+                        "type": "String"
+                    }
+                }],
+                "IATANumbers": [{
+                    "type": "String"
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinationId": {
+                    "type": "String"
+                },
+                "policies": [{
+                    "type":"String"
+                }]
+            },
+            "serviceCharge": {
+                "type": {
+                    "type": "String",
+                    "enum": [
+                        "air",
+                        "non air"
+                    ]
+                },
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "isSettlementTransactionWise": {
+                    "type": "Boolean"
+                },
+                "fixed": {
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "isAmount": {
+                        "type": "Boolean"
+                    },
+                    "valueAmount": {
+                        "type": "Number"
+                    },
+                    "currency": {
+                        "type": "String"
+                    },
+                    "percentageDetails": [{
+                        "valuePercentage": {
+                            "type": "Number"
+                        },
+                        "farePriceComponents": {
+                            "type": "String"
+                        }
+                    }],
+                    "unit": {
+                        "type": "String"
+                    }
+                },
+                "product": [{
+                    "productId": {
+                        "type": "String"
+                    },
+                    "brand": {
+                        "type": "String"
+                    },
+                    "chain": {
+                        "type": "String"
+                    }
+                }],
+                "client": [{
+                    "clientType": {
+                        "type": "String"
+                    },
+                    "clientgroup": {
+                        "type": "String"
+                    },
+                    "clientName": {
+                        "type": "String"
+                    }
+                }],
+                "supplierRate": [{
+                    "supplierRatetype": {
+                        "type": "String"
+                    },
+                    "supplierRateCode": {
+                        "type": "String"
+                    }
+                }],
+                "IATANumbers": [{
+                    "type": "String"
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinationId": {
+                    "type": "String"
+                },
+                "policies": [{
+                    "type":"String"
+                }]
+            },
+            "commissionFlights": {
+                "type": {
+                    "type": "String",
+                    "enum": [
+                        "air"
+                    ]
+                },
+                "isTransactional": {
+                    "type": "Boolean"
+                },
+                "commercialInformation": {
+                    "commercialType": {
+                        "type": "String"
+                    },
+                    "commercialDescription": {
+                        "type": "String"
+                    }
+                },
+                "fixed": {
+                    "isPercentage": {
+                        "type": "Boolean"
+                    },
+                    "isAmount": {
+                        "type": "Boolean"
+                    },
+                    "valueAmount": {
+                        "type": "Number"
+                    },
+                    "currency": {
+                        "type": "String"
+                    },
+                    "percentageDetails": [{
+                        "valuePercentage": {
+                            "type": "Number"
+                        },
+                        "farePriceComponents": {
+                            "type": "String"
+                        }
+                    }],
+                    "unit": {
+                        "type": "String"
+                    }
+                },
+                "product": [{
+                    "productId": {
+                        "type": "String"
+                    }
+                }],
+                "calculation": {
+                    "calculationType": {
+                        "type": "String"
+                    },
+                    "netOffCommercialHead": {
+                        "type": "String"
+                    }
+                },
+                "client": [{
+                    "clientType": {
+                        "type": "String"
+                    },
+                    "clientgroup": {
+                        "type": "String"
+                    },
+                    "clientName": {
+                        "type": "String"
+                    }
+                }],
+                "IATANumbers": [{
+                    "type": "String"
+                }],
+                "contractValidityFrom": {
+                    "type": "Date"
+                },
+                "contractValidityTo": {
+                    "type": "Date"
+                },
+                "media": [{
+                    "fileCategory": {
+                        "type": "String"
+                    },
+                    "fileName": {
+                        "type": "String"
+                    },
+                    "fileDescription": {
+                        "type": "String"
+                    },
+                    "assetID": {
+                        "type": "String"
+                    }
+                }],
+                "advanceDefinationId": {
+                    "type": "String"
+                },
+                "policies": [{
+                    "type":"String"
+                }]
+            }
+        },
+        "createdBy": {
+            "type": "String"
+        },
+        "createdAt": {
+            "type": "Date"
+        },
+        "updatedBy": {
+            "type": "String"
+        },
+        "lastUpdated": {
+            "type": "Date"
+        },
+        "deleted": {
+            "type": "Boolean"
+        }
+    }
+}

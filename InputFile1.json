@@ -1,0 +1,690 @@
+{
+    "SupplierCommercialData": {
+        "_id": "SCMC302",
+        "__v": 0,
+        "deleted": false,
+        "lastUpdated": "2018-01-18T08:52:17.154Z",
+        "createdAt": "2018-01-18T07:04:20.754Z",
+        "standardCommercial": {
+            "contractValidityTo": "2018-01-31T00:00:00.000Z",
+            "contractValidityFrom": "2018-01-18T00:00:00.000Z",
+            "isFixed": true,
+            "isCommisionable": true,
+            "isTransactional": true,
+            "isSettlementTransactionWise": true,
+            "advanceCommercialsId": [
+                "ADC253","ADC254"
+            ],
+            "advanceDefinitionsId": "SCAD116",
+            "policies": [],
+            "media": [],
+            "product": {
+                "holidays": {
+                    "supplierRate": [],
+                    "products": []
+                },
+                "activities": {
+                    "IATANumbers": [],
+                    "supplierRate": [],
+                    "productInformation": []
+                },
+                "transportation": {
+                    "product": {
+                        "genericProduct": {
+                            "productId": []
+                        },
+                        "flight": {
+                            "IATANumbers": [],
+                            "productId": []
+                        },
+                        "bus": {
+                            "routes": [],
+                            "operators": []
+                        },
+                        "rail": []
+                    }
+                },
+                "accommodation": {
+                    "IATANumbers": [
+                        "445"
+                    ],
+                    "supplierRate": [],
+                    "productInformation": [
+                        {
+                            "chain": "Outrigger Hospitality",
+                            "brand": "Outrigger Hotels and Resorts",
+                            "_id": "5a6046f481a03d177c0b38a3"
+                        }
+                    ]
+                }
+            },
+            "clients": [
+                {
+                    "clientType": "B2B",
+                    "_id": "5a6046f481a03d177c0b38a4"
+                }
+            ],
+            "calculation": {
+                "calculationType": "Gross",
+                "markUp": {
+                    "clientType": "B2B",
+                    "maximumPercent": 34,
+                    "minimumPercent": 2
+                },
+                "markDown": {
+                    "applicable": false
+                }
+            },
+            "slab": [],
+            "fixed": {
+                "isAmount": false,
+                "isPercentage": true,
+                "percentageDetails": [
+                    {
+                        "valuePercentage": 12,
+                        "farePriceComponents": "Fare Or Price Component",
+                        "_id": "5a6046f481a03d177c0b38a5"
+                    }
+                ]
+            },
+            "commercialInformation": {
+                "isProvisional": true,
+                "commercialDescription": "dfh fgjhjghjk",
+                "commercialType": "Payable"
+            }
+        },
+        "commercialDefinition": {
+            "supplierId": "SUPP49",
+            "productCategorySubType": "Hotel",
+            "productCategory": "Accommodation",
+            "supplierMarkets": [
+                "trutr"
+            ]
+        }
+    },
+    "advanceDefinationData": [
+        {
+            "_id": "SCAD116",
+            "deleted": false,
+            "lastUpdated": "2018-02-01T10:43:48.242Z",
+            "createdAt": "2018-02-01T10:43:48.231Z",
+            "advanceDefinitionHolidays": {
+                "tourTypes": [],
+                "applicableOn": [],
+                "passengerType": {
+                    "passengerType": []
+                },
+                "nationality": {
+                    "clientNationality": []
+                },
+                "credentials": [],
+                "roomLevel": {
+                    "roomTypes": [],
+                    "roomCategories": []
+                },
+                "travelDestinations": [],
+                "validity": {
+                    "travelSales": [],
+                    "sales": []
+                }
+            },
+            "advanceDefinitionTransportation": {
+                "vehicleDetails": {
+                    "vehicles": []
+                },
+                "nationality": {
+                    "clientNationality": []
+                },
+                "passengerTypes": [],
+                "credentials": [],
+                "travelDestination": {
+                    "destinations": []
+                },
+                "validity": {
+                    "salePlusTravel": [],
+                    "travel": [],
+                    "sale": []
+                }
+            },
+            "advanceDefinitionActivities": {
+                "nationality": {
+                    "clientNationality": []
+                },
+                "passengerTypes": [],
+                "credentials": [],
+                "travelDestination": {
+                    "destinations": []
+                },
+                "validity": {
+                    "salePlusTravel": [],
+                    "travel": [],
+                    "sale": []
+                }
+            },
+            "advanceDefinitionAccommodationPLB": {
+                "nationality": [],
+                "passenger": [],
+                "credentials": [],
+                "connectivity": {
+                    "triggerOrPayout": []
+                },
+                "others": {
+                    "bookingType": {
+                        "triggerOrPayout": []
+                    },
+                    "roomTypes": [],
+                    "roomCategories": []
+                },
+                "travelDestination": {
+                    "travel": []
+                },
+                "validity": {
+                    "salePlusTravel": [],
+                    "travel": [],
+                    "sale": []
+                }
+            },
+            "advanceDefinitionAccommodation": {
+                "nationality": {
+                    "isInclusion": true,
+                    "clientNationality": []
+                },
+                "passengerTypes": [],
+                "credentials": [],
+                "connectivity": {
+                    "supplierType": "",
+                    "supplierId": ""
+                },
+                "others": {
+                    "bookingType": "",
+                    "roomTypes": {
+                        "isInclusion": true,
+                        "roomTypes": []
+                    },
+                    "roomCategories": {
+                        "isInclusion": true,
+                        "roomCategories": []
+                    }
+                },
+                "travelDestination": {
+                    "isInclusion": true,
+                    "destinations": []
+                },
+                "salePlusTravel": [],
+                "validity": {
+                    "validityType": "sale",
+                    "travel": [],
+                    "sale": []
+                }
+            },
+            "advanceDefinitionAir": {
+                "passengerTypes": [],
+                "credentials": [],
+                "fareClass": {
+                    "dealCodes": {
+                        "dealCodes": []
+                    },
+                    "fareBasis": {
+                        "fare": []
+                    }
+                },
+                "bookingClass": {
+                    "cabin": []
+                },
+                "flightTimings": {
+                    "flightTimings": []
+                },
+                "flightNumbers": {
+                    "flightRange": []
+                },
+                "travelDestination": {
+                    "destinations": [],
+                    "journeyType": [],
+                    "soldAndTicketingOptions": []
+                },
+                "validity": {
+                    "ticketingPlusTravel": [],
+                    "travel": [],
+                    "ticketing": []
+                }
+            },
+            "__v": 0
+        }
+    ],
+    "advanceCommercialData": [
+        {
+            "_id": "ADC253",
+            "deleted": false,
+            "lastUpdated": "2018-01-18T07:35:24.198Z",
+            "createdAt": "2018-01-18T07:05:29.172Z",
+            "advanceCommercial": {
+                "commercialId": "SCMC302",
+                "commissionFlights": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "client": [],
+                    "calculation": {},
+                    "product": [],
+                    "fixed": {
+                        "percentageDetails": []
+                    },
+                    "commercialInformation": {}
+                },
+                "serviceCharge": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "supplierRate": [],
+                    "client": [],
+                    "product": [],
+                    "fixed": {
+                        "percentageDetails": []
+                    },
+                    "commercialInformation": {}
+                },
+                "issuanceFees": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "client": [],
+                    "calculation": {},
+                    "product": [],
+                    "fixed": {
+                        "percentageDetails": []
+                    },
+                    "commercialInformation": {}
+                },
+                "segmentFees": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "supplierRate": [],
+                    "client": [],
+                    "calculation": {},
+                    "product": [],
+                    "slab": [],
+                    "commercialInformation": {}
+                },
+                "sectorWiseIncentives": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "client": [],
+                    "calculation": {},
+                    "product": [],
+                    "slab": [],
+                    "commercialInformation": {}
+                },
+                "destinationIncentives": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "supplierRate": [],
+                    "client": [],
+                    "calculation": {},
+                    "product": [],
+                    "slab": [],
+                    "commercialInformation": {}
+                },
+                "plb": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "supplierRate": [],
+                    "client": [],
+                    "calculation": {},
+                    "product": [],
+                    "slab": [],
+                    "commercialInformation": {}
+                },
+                "overRidingCommission": {
+                    "contractValidityTo": "2018-06-31T00:00:00.000Z",
+                    "contractValidityFrom": "2018-07-18T00:00:00.000Z",
+                    "advanceDefinationId": "SCAD117",
+                    "calculationType": "fixed",
+                    "isTransactional": true,
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [
+                        "675"
+                    ],
+                    "supplierRate": [],
+                    "client": [
+                        {
+                            "clientType": "B2B",
+                            "clientgroup": "",
+                            "clientName": "",
+                            "_id": "5a60473981a03d177c0b38a6"
+                        }
+                    ],
+                    "calculation": {
+                        "netOffCommercialHead": "",
+                        "calculationType": "Gross"
+                    },
+                    "product": [
+                        {
+                            "productId": "",
+                            "chain": "Outrigger Hospitality",
+                            "brand": "Outrigger Hotels and Resorts",
+                            "_id": "5a60473981a03d177c0b38a7"
+                        }
+                    ],
+                    "slab": [],
+                    "fixed": {
+                        "currency": "",
+                        "valueAmount": 0,
+                        "isAmount": false,
+                        "isPercentage": true,
+                        "percentageDetails": [
+                            {
+                                "valuePercentage": 234,
+                                "farePriceComponents": "Fare Or Price Component",
+                                "_id": "5a60473981a03d177c0b38a8"
+                            }
+                        ]
+                    },
+                    "commercialInformation": {
+                        "commercialDescription": "sdfg dfhfgjhfj",
+                        "commercialType": "Payable"
+                    }
+                },
+                "freeOfCostHolidays": {
+                    "media": [],
+                    "slabsOrRunning": []
+                },
+                "freeOfCostActivities": {
+                    "policies": [],
+                    "media": [],
+                    "freeOfCostUtilization": [],
+                    "slabsOrRunning": []
+                },
+                "freeOfCostAccommodation": {
+                    "media": [],
+                    "freeOfCostUtilization": [],
+                    "slabOrRunning": []
+                },
+                "freeOfCostFlights": {
+                    "media": [],
+                    "freeOfCostUtilization": [],
+                    "slabOrRunning": []
+                },
+                "MSfFees": {
+                    "media": [],
+                    "paymentRule": {
+                        "cardTypes": [],
+                        "paymentType": []
+                    }
+                },
+                "penaltyFeeOrKickBack": {
+                    "media": [],
+                    "penaltyCriteria": []
+                },
+                "terminationFees": {
+                    "media": [],
+                    "returnOfPayable": []
+                },
+                "remittanceFees": {
+                    "media": [],
+                    "slabs": []
+                },
+                "incentiveOnTopup": {
+                    "media": [],
+                    "rateType": [],
+                    "periodicity": {
+                        "fortnightly": [],
+                        "weekly": [],
+                        "daily": []
+                    },
+                    "topUpAmount": []
+                },
+                "lookToBook": {
+                    "media": [],
+                    "products": [],
+                    "LTBbyRatio": []
+                },
+                "otherFees": {
+                    "media": [],
+                    "applyOn": [],
+                    "percentage": []
+                },
+                "signupBonus": {
+                    "media": [],
+                    "signupBonusCriteria": []
+                },
+                "commercialHeadInfo": {
+                    "displayName": "Overriding Commission",
+                    "groupName": "overridingCommission"
+                }
+            },
+            "__v": 0
+        },
+        {
+            "_id": "ADC254",
+            "deleted": false,
+            "lastUpdated": "2018-02-01T09:59:17.863Z",
+            "createdAt": "2018-01-18T07:07:17.669Z",
+            "advanceCommercial": {
+                "commercialId": "SCMC302",
+                "commissionFlights": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "client": [],
+                    "calculation": {},
+                    "product": [],
+                    "fixed": {
+                        "percentageDetails": []
+                    },
+                    "commercialInformation": {}
+                },
+                "serviceCharge": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "supplierRate": [],
+                    "client": [],
+                    "product": [],
+                    "fixed": {
+                        "percentageDetails": []
+                    },
+                    "commercialInformation": {}
+                },
+                "issuanceFees": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "client": [],
+                    "calculation": {},
+                    "product": [],
+                    "fixed": {
+                        "percentageDetails": []
+                    },
+                    "commercialInformation": {}
+                },
+                "segmentFees": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "supplierRate": [],
+                    "client": [],
+                    "calculation": {},
+                    "product": [],
+                    "slab": [],
+                    "commercialInformation": {}
+                },
+                "sectorWiseIncentives": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "client": [],
+                    "calculation": {},
+                    "product": [],
+                    "slab": [],
+                    "commercialInformation": {}
+                },
+                "destinationIncentives": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "supplierRate": [],
+                    "client": [],
+                    "calculation": {},
+                    "product": [],
+                    "slab": [],
+                    "commercialInformation": {}
+                },
+                "plb": {
+                    "isTransactional": true,
+                    "advanceDefinationId": "SCAD112",
+                    "contractValidityFrom": "2018-02-01T00:00:00.000Z",
+                    "contractValidityTo": "2018-02-28T00:00:00.000Z",
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [
+                        "121",
+                        "675"
+                    ],
+                    "supplierRate": [
+                        {
+                            "supplierRatetype": "All",
+                            "supplierRateCode": "All",
+                            "_id": "5a72e4f50cfbe1250c3f95ff"
+                        }
+                    ],
+                    "client": [
+                        {
+                            "clientType": "B2B",
+                            "clientgroup": "PQR Associates",
+                            "clientName": "CNK",
+                            "_id": "5a72e4f50cfbe1250c3f9600"
+                        }
+                    ],
+                    "calculation": {
+                        "calculationType": "Gross",
+                        "netOffCommercialHead": ""
+                    },
+                    "product": [
+                        {
+                            "productId": "",
+                            "chain": "Outrigger Hospitality",
+                            "brand": "Outrigger Hotels and Resorts",
+                            "_id": "5a6047a581a03d177c0b38aa"
+                        }
+                    ],
+                    "slab": [
+                        {
+                            "isCumulative": true,
+                            "slabType": "No. of Passengers",
+                            "isPercentage": true,
+                            "isAmount": false,
+                            "currency": "",
+                            "valueAmount": 0,
+                            "_id": "5a6047a581a03d177c0b38ab",
+                            "percentageDetails": [
+                                {
+                                    "valuePercentage": 23,
+                                    "farePriceComponents": "Fare Or Price Component",
+                                    "_id": "5a6047a581a03d177c0b38ac"
+                                }
+                            ],
+                            "currencyDetails": [
+                                {
+                                    "currency": "AUD",
+                                    "fromValue": 1,
+                                    "toValue": 23,
+                                    "_id": "5a6047a581a03d177c0b38ad"
+                                }
+                            ]
+                        }
+                    ],
+                    "commercialInformation": {
+                        "commercialType": "Receivable",
+                        "commercialDescription": "sd gfdgfdfgh"
+                    }
+                },
+                "overRidingCommission": {
+                    "policies": [],
+                    "media": [],
+                    "IATANumbers": [],
+                    "supplierRate": [],
+                    "client": [],
+                    "product": [],
+                    "slab": [],
+                    "fixed": {
+                        "percentageDetails": []
+                    }
+                },
+                "freeOfCostHolidays": {
+                    "media": [],
+                    "slabsOrRunning": []
+                },
+                "freeOfCostActivities": {
+                    "policies": [],
+                    "media": [],
+                    "freeOfCostUtilization": [],
+                    "slabsOrRunning": []
+                },
+                "freeOfCostAccommodation": {
+                    "media": [],
+                    "freeOfCostUtilization": [],
+                    "slabOrRunning": []
+                },
+                "freeOfCostFlights": {
+                    "media": [],
+                    "freeOfCostUtilization": [],
+                    "slabOrRunning": []
+                },
+                "MSfFees": {
+                    "media": [],
+                    "paymentRule": {
+                        "cardTypes": [],
+                        "paymentType": []
+                    }
+                },
+                "penaltyFeeOrKickBack": {
+                    "media": [],
+                    "penaltyCriteria": []
+                },
+                "terminationFees": {
+                    "media": [],
+                    "returnOfPayable": []
+                },
+                "remittanceFees": {
+                    "media": [],
+                    "slabs": []
+                },
+                "incentiveOnTopup": {
+                    "media": [],
+                    "rateType": [],
+                    "periodicity": {
+                        "fortnightly": [],
+                        "weekly": [],
+                        "daily": []
+                    },
+                    "topUpAmount": []
+                },
+                "lookToBook": {
+                    "media": [],
+                    "products": [],
+                    "LTBbyRatio": []
+                },
+                "otherFees": {
+                    "media": [],
+                    "applyOn": [],
+                    "percentage": []
+                },
+                "signupBonus": {
+                    "media": [],
+                    "signupBonusCriteria": []
+                },
+                "commercialHeadInfo": {
+                    "groupName": "productivityLinkedBonus",
+                    "displayName": "Productivity Linked Bonus"
+                }
+            },
+            "__v": 0
+        },
+		
+    ]
+}

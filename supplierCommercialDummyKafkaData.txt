@@ -1,0 +1,622 @@
+{
+    "SupplierCommercialData": {
+        "_id": "SCMC302",
+        "__v": 0,
+        "deleted": false,
+        "lastUpdated": "2018-01-18T08:52:17.154Z",
+        "createdAt": "2018-01-18T07:04:20.754Z",
+        "standardCommercial": {
+            "contractValidityTo": "2018-01-31T00:00:00.000Z",
+            "contractValidityFrom": "2018-01-18T00:00:00.000Z",
+            "isFixed": true,
+            "isCommisionable": true,
+            "isTransactional": true,
+            "isSettlementTransactionWise": true,
+            "advanceCommercialsId": ["ADC218"],
+
+            "advanceDefinitonsId": "SCAD1",
+
+            "policies": [
+
+            ],
+            "media": [
+
+            ],
+            "product": {
+                "holidays": {
+                    "supplierRate": [
+
+                    ],
+                    "products": [
+
+                    ]
+                },
+                "activities": {
+                    "IATANumbers": [
+
+                    ],
+                    "supplierRate": [
+
+                    ],
+                    "productInformation": [
+
+                    ]
+                },
+                "transportation": {
+                    "product": {
+                        "genericProduct": {
+                            "productId": [
+
+                            ]
+                        },
+                        "flight": {
+                            "IATANumbers": [
+
+                            ],
+                            "productId": [
+
+                            ]
+                        },
+                        "bus": {
+                            "routes": [
+
+                            ],
+                            "operators": [
+
+                            ]
+                        },
+                        "rail": [
+
+                        ]
+                    }
+                },
+                "accommodation": {
+                    "IATANumbers": [
+                        "445"
+                    ],
+                    "supplierRate": [
+
+                    ],
+                    "productInformation": [{
+                        "chain": "Outrigger Hospitality",
+                        "brand": "Outrigger Hotels and Resorts",
+                        "_id": "5a6046f481a03d177c0b38a3"
+                    }]
+                }
+            },
+            "clients": [{
+                "clientType": "B2B",
+                "_id": "5a6046f481a03d177c0b38a4"
+            }],
+            "calculation": {
+                "calculationType": "Gross",
+                "markUp": {
+                    "clientType": "B2B",
+                    "maximumPercent": 34,
+                    "minimumPercent": 2
+                },
+                "markDown": {
+                    "applicable": false
+                }
+            },
+            "slab": [
+
+            ],
+            "fixed": {
+                "isAmount": false,
+                "isPercentage": true,
+                "percentageDetails": [{
+                    "valuePercentage": 12,
+                    "farePriceComponents": "Fare Or Price Component",
+                    "_id": "5a6046f481a03d177c0b38a5"
+                }]
+            },
+            "commercialInformation": {
+                "isProvisional": true,
+                "commercialDescription": "dfh fgjhjghjk",
+                "commercialType": "Payable"
+            }
+        },
+        "commercialDefinition": {
+            "supplierId": "SUPP49",
+            "productCategorySubType": "Hotel",
+            "productCategory": "Accommodation",
+            "supplierMarkets": [
+                "trutr"
+            ]
+        }
+    },
+    "advanceDefinationData": [{
+        "_id": "SCAD1",
+        "deleted": false,
+        "lastUpdated": "2017-11-20T09:21:56.381Z",
+        "createdAt": "2017-11-20T09:21:56.352Z",
+       
+            "activities": {
+                "nationality": [{
+                    "clientNationality": "Afghanistan"
+                }],
+                "passengerTypes": [
+                    "Infant"
+                ],
+                "credentials": [],
+                "connectivity": {
+                    "supplierType": "Source",
+                    "supplierName": "sadfsd sdf"
+                },
+                "others": {
+                    "bookingType": "paidbooking"
+                },
+                "travelDestination": {
+                    "destinations": [{
+                        "continent": "Europe",
+                        "country": "Andorra",
+                        "state": "La Massana",
+                        "city": "Arinsal"
+                    }]
+                },
+                "validity": {
+                    "validityType": "sale",
+                    "salePlusTravel": [],
+                    "travel": [],
+                    "sale": [{
+                        "saleFrom": "2017-11-01T00:00:00.000Z",
+                        "saleTo": "2017-11-11T00:00:00.000Z",
+                        "blockOutFrom": "2017-11-11T00:00:00.000Z",
+                        "blockOutTo": "2017-11-23T00:00:00.000Z"
+                    }]
+                }
+            },
+            "transportation": {
+                "vehicleDetails": {
+                    "vehicles": []
+                },
+                "credentials": [],
+                "travelDestination": {
+                    "destinations": []
+                },
+                "validity": {
+                    "salePlusTravel": [],
+                    "travel": [],
+                    "sale": []
+                }
+            },
+            "holidays": {
+                "tourTypes": [],
+                "applicableOn": [],
+                "passengerType": [],
+                "nationality": [],
+                "credentials": [],
+                "roomLevel": {
+                    "roomTypes": [],
+                    "roomCategories": []
+                },
+                "travelDestinations": [],
+                "validity": {
+                    "travel": [],
+                    "sales": []
+                }
+            },
+            "PLB": {
+                "nationality": [],
+                "passenger": [],
+                "credentials": [],
+                "others": {
+                    "roomTypes": [],
+                    "roomCategories": []
+                },
+                "travelDestination": {
+                    "travel": []
+                },
+                "validity": {
+                    "salePlusTravel": [],
+                    "travel": [],
+                    "sale": []
+                }
+            },
+            "advanceDefinitionAccommodation": {
+                "nationality": {
+                    "clientNationality": []
+                },
+                "passengerTypes": [],
+                "credentials": [],
+                "others": {
+                    "roomTypes": {
+                        "roomTypes": []
+                    },
+                    "roomCategories": {
+                        "roomCategories": []
+                    }
+                },
+                "travelDestination": {
+                    "destinations": []
+                },
+                "validity": {
+                    "salePlusTravel": [],
+                    "travel": [],
+                    "sale": []
+                }
+            },
+            "flights": {
+                "passengerTypes": [],
+                "credentials": [],
+                "fareClass": {
+                    "dealCodes": {
+                        "dealCodes": []
+                    },
+                    "fareBasis": {
+                        "fare": []
+                    }
+                },
+                "bookingClass": {
+                    "cabin": []
+                },
+                "flightTimings": {
+                    "flightTimings": []
+                },
+                "flightNumbers": {
+                    "flightRange": []
+                },
+                "travelDestination": {
+                    "booking": [],
+                    "journeyType": [],
+                    "options": []
+                },
+                "validity": {
+                    "ticketingPlusTravel": [],
+                    "travel": [],
+                    "ticketing": []
+                }
+            }
+        
+       
+    }],
+    "advanceCommercialData": [{
+        "_id": "ADC218",
+        "__v": 0,
+        "deleted": false,
+        "lastUpdated": "2018-01-05T04:35:09.396Z",
+        "createdAt": "2018-01-05T04:21:16.440Z",
+        "advanceCommercial": {
+            "commercialId": "SCMC201",
+            "commissionFlights": {
+                "policies": [
+
+                ],
+                "media": [
+
+                ],
+                "IATANumbers": [
+
+                ],
+                "client": [
+
+                ],
+                "product": [
+
+                ],
+                "fixed": {
+                    "percentageDetails": [
+
+                    ]
+                }
+            },
+            "serviceCharge": {
+                "policies": [
+
+                ],
+                "media": [
+
+                ],
+                "IATANumbers": [
+
+                ],
+                "supplierRate": [
+
+                ],
+                "client": [
+
+                ],
+                "product": [
+
+                ],
+                "fixed": {
+                    "percentageDetails": [
+
+                    ]
+                }
+            },
+            "issuanceFees": {
+                "policies": [
+
+                ],
+                "media": [
+
+                ],
+                "IATANumbers": [
+
+                ],
+                "client": [
+
+                ],
+                "product": [
+
+                ],
+                "fixed": {
+                    "percentageDetails": [
+
+                    ]
+                }
+            },
+            "segmentFees": {
+                "policies": [
+
+                ],
+                "media": [
+
+                ],
+                "IATANumbers": [
+
+                ],
+                "supplierRate": [
+
+                ],
+                "client": [
+
+                ],
+                "product": [
+
+                ],
+                "slab": [
+
+                ]
+            },
+            "sectorWiseIncentives": {
+                "policies": [
+
+                ],
+                "media": [
+
+                ],
+                "IATANumbers": [
+
+                ],
+                "client": [
+
+                ],
+                "product": [
+
+                ],
+                "slab": [
+
+                ]
+            },
+            "destinationIncentives": {
+                "policies": [
+
+                ],
+                "media": [
+
+                ],
+                "IATANumbers": [
+
+                ],
+                "supplierRate": [
+
+                ],
+                "client": [
+
+                ],
+                "product": [
+
+                ],
+                "slab": [
+
+                ]
+            },
+            "plb": {
+                "policies": [
+
+                ],
+                "media": [
+
+                ],
+                "IATANumbers": [
+
+                ],
+                "supplierRate": [
+
+                ],
+                "client": [
+
+                ],
+                "product": [
+
+                ],
+                "slab": [
+
+                ]
+            },
+            "overRidingCommission": {
+                "policies": [
+
+                ],
+                "media": [
+
+                ],
+                "IATANumbers": [
+
+                ],
+                "supplierRate": [
+
+                ],
+                "client": [
+
+                ],
+                "product": [
+
+                ],
+                "slab": [
+
+                ],
+                "fixed": {
+                    "percentageDetails": [
+
+                    ]
+                }
+            },
+            "freeOfCostHolidays": {
+                "media": [
+
+                ],
+                "slabsOrRunning": [
+
+                ]
+            },
+            "freeOfCostActivities": {
+                "policies": [
+
+                ],
+                "media": [
+
+                ],
+                "freeOfCostUtilization": [
+
+                ],
+                "slabsOrRunning": [
+
+                ]
+            },
+            "freeOfCostAccommodation": {
+                "media": [
+
+                ],
+                "freeOfCostUtilization": [
+
+                ],
+                "slabOrRunning": [
+
+                ]
+            },
+            "freeOfCostFlights": {
+                "media": [
+
+                ],
+                "freeOfCostUtilization": [
+
+                ],
+                "slabOrRunning": [
+
+                ]
+            },
+            "MSfFees": {
+                "media": [
+
+                ],
+                "paymentRule": {
+                    "cardTypes": [
+
+                    ],
+                    "paymentType": [
+
+                    ]
+                }
+            },
+            "penaltyFeeOrKickBack": {
+                "media": [
+
+                ],
+                "penaltyCriteria": [
+
+                ]
+            },
+            "terminationFees": {
+                "media": [
+
+                ],
+                "returnOfPayable": [
+
+                ]
+            },
+            "remittanceFees": {
+                "media": [
+
+                ],
+                "slabs": [
+
+                ]
+            },
+            "incentiveOnTopup": {
+                "media": [
+
+                ],
+                "rateType": [
+
+                ],
+                "periodicity": {
+                    "fortnightly": [
+
+                    ],
+                    "weekly": [
+
+                    ],
+                    "daily": [
+
+                    ]
+                },
+                "topUpAmount": [
+
+                ]
+            },
+            "lookToBook": {
+                "media": [
+
+                ],
+                "products": [
+
+                ],
+                "LTBbyRatio": [
+
+                ]
+            },
+            "otherFees": {
+                "media": [
+
+                ],
+                "applyOn": [
+
+                ],
+                "percentage": [
+
+                ]
+            },
+            "signupBonus": {
+                "contractValidityFrom": "2018-01-10T00:00:00.000Z",
+                "contractValidityTo": "2018-01-31T00:00:00.000Z",
+                "media": [
+
+                ],
+                "signupBonusCriteria": [{
+                    "slabType": "No of tickets",
+                    "targetFrom": 10,
+                    "targetTo": 14,
+                    "periodFrom": "2018-01-18T00:00:00.000Z",
+                    "periodTo": "2018-01-31T00:00:00.000Z",
+                    "_id": "5a4efd3cb9097a2d849be1bc"
+                }],
+                "signupBonus": {
+                    "currency": "AED",
+                    "value": 12
+                },
+                "commercialInformation": {
+                    "commercialType": "Payable",
+                    "commercialDescription": "ds gfgdfg"
+                }
+            },
+            "commercialHeadInfo": {
+                "groupName": "signupBonus",
+                "displayName": "Sign Up Bonus"
+            }
+        }
+    }]
+}
