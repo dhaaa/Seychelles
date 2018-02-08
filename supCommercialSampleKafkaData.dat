@@ -1,0 +1,5581 @@
+{
+	"SupplierCommercialData": {
+		"_id": "SCMC302",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-07T14:40:08.798Z",
+		"createdAt": "2018-01-18T07:04:20.754Z",
+		"standardCommercial": {
+			"advanceDefinationId": "SCAD119",
+			"isSettlementTransactionWise": true,
+			"isTransactional": true,
+			"isCommisionable": true,
+			"isFixed": true,
+			"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+			"contractValidityTo": "2018-01-31T00:00:00.000Z",
+			"advanceCommercialsId": [],
+			"policies": [],
+			"media": [],
+			"product": {
+				"holidays": {
+					"supplierRate": [],
+					"products": []
+				},
+				"activities": {
+					"IATANumbers": [],
+					"supplierRate": [],
+					"productInformation": []
+				},
+				"transportation": {
+					"product": {
+						"genericProduct": {
+							"productId": []
+						},
+						"flight": {
+							"IATANumbers": [],
+							"productId": []
+						},
+						"bus": {
+							"routes": [],
+							"operators": []
+						},
+						"rail": []
+					}
+				},
+				"accommodation": {
+					"IATANumbers": ["445"],
+					"supplierRate": [],
+					"productInformation": [{
+						"chain": "Outrigger Hospitality",
+						"brand": "Outrigger Hotels and Resorts",
+						"_id": "5a7b0fc8bd129a91c444b88b"
+					}]
+				}
+			},
+			"clients": [{
+				"clientType": "B2B",
+				"_id": "5a7b0fc8bd129a91c444b88a"
+			}],
+			"calculation": {
+				"calculationType": "Gross",
+				"markUp": {
+					"minimumPercent": 2,
+					"maximumPercent": 34,
+					"clientType": "B2B"
+				},
+				"markDown": {
+					"applicable": false
+				}
+			},
+			"slab": [],
+			"fixed": {
+				"isPercentage": true,
+				"isAmount": false,
+				"percentageDetails": [{
+					"valuePercentage": 12,
+					"farePriceComponents": "Fare Or Price Component",
+					"_id": "5a7b0fc8bd129a91c444b889"
+				}]
+			},
+			"commercialInformation": {
+				"commercialType": "Payable",
+				"commercialDescription": "dfh fgjhjghjk",
+				"isProvisional": true
+			}
+		},
+		"commercialDefinition": {
+			"productCategory": "Accommodation",
+			"productCategorySubType": "Hotel",
+			"supplierId": "SUPP49",
+			"supplierMarkets": ["trutr"]
+		}
+	},
+	"advanceCommercialData": [{
+		"_id": "ADC253",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:35:24.198Z",
+		"createdAt": "2018-01-18T07:05:29.172Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"advanceDefinationId": "SCAD117",
+				"calculationType": "fixed",
+				"isTransactional": true,
+				"policies": [],
+				"media": [],
+				"IATANumbers": ["675"],
+				"supplierRate": [],
+				"client": [{
+					"clientType": "B2B",
+					"clientgroup": "",
+					"clientName": "",
+					"_id": "5a60473981a03d177c0b38a6"
+				}],
+				"calculation": {
+					"netOffCommercialHead": "",
+					"calculationType": "Gross"
+				},
+				"holidayProduct": [],
+				"product": [{
+					"productId": "",
+					"chain": "Outrigger Hospitality",
+					"brand": "Outrigger Hotels and Resorts",
+					"_id": "5a60473981a03d177c0b38a7"
+				}],
+				"slab": [],
+				"fixed": {
+					"currency": "",
+					"valueAmount": 0,
+					"isAmount": false,
+					"isPercentage": true,
+					"percentageDetails": [{
+						"valuePercentage": 234,
+						"farePriceComponents": "Fare Or Price Component",
+						"_id": "5a60473981a03d177c0b38a8"
+					}]
+				},
+				"commercialInformation": {
+					"commercialDescription": "sdfg dfhfgjhfj",
+					"commercialType": "Payable",
+					"isProvisional": true
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Overriding Commission",
+				"groupName": "overridingCommission"
+			}
+		}
+	}, {
+		"_id": "ADC254",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-07T12:22:19.750Z",
+		"createdAt": "2018-01-18T07:07:17.669Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"contractValidityTo": "2018-02-28T00:00:00.000Z",
+				"contractValidityFrom": "2018-02-01T00:00:00.000Z",
+				"advanceDefinationId": "SCAD112",
+				"isTransactional": true,
+				"policies": [],
+				"media": [],
+				"IATANumbers": ["121", "675"],
+				"supplierRate": [{
+					"supplierRatetype": "All",
+					"supplierRateCode": "All",
+					"_id": "5a7aef7b03c1250f5066f47a"
+				}],
+				"client": [{
+					"clientType": "B2B",
+					"clientgroup": "PQR Associates",
+					"clientName": "CNK",
+					"_id": "5a72e4f50cfbe1250c3f9600"
+				}],
+				"calculation": {
+					"netOffCommercialHead": "",
+					"calculationType": "Gross"
+				},
+				"holidayProduct": [],
+				"product": [{
+					"productId": "",
+					"chain": "Outrigger Hospitality",
+					"brand": "Outrigger Hotels and Resorts",
+					"_id": "5a6047a581a03d177c0b38aa"
+				}],
+				"slab": [{
+					"isCumulative": true,
+					"slabType": "No. of Passengers",
+					"isPercentage": true,
+					"isAmount": false,
+					"currency": "",
+					"valueAmount": 0,
+					"_id": "5a6047a581a03d177c0b38ab",
+					"percentageDetails": [{
+						"valuePercentage": 23,
+						"farePriceComponents": "Fare Or Price Component",
+						"_id": "5a6047a581a03d177c0b38ac"
+					}],
+					"currencyDetails": [{
+						"currency": "AUD",
+						"fromValue": 1,
+						"toValue": 23,
+						"_id": "5a6047a581a03d177c0b38ad"
+					}]
+				}],
+				"commercialInformation": {
+					"commercialDescription": "sd gfdgfdfgh",
+					"commercialType": "Receivable"
+				}
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Productivity Linked Bonus",
+				"groupName": "productivityLinkedBonus"
+			}
+		}
+	}, {
+		"_id": "ADC255",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:35:18.160Z",
+		"createdAt": "2018-01-18T07:08:39.980Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"advanceDefinationId": "",
+				"isTransactional": true,
+				"policies": [],
+				"media": [],
+				"IATANumbers": ["675"],
+				"supplierRate": [],
+				"client": [{
+					"clientType": "B2C",
+					"clientgroup": "",
+					"clientName": "",
+					"_id": "5a6047f781a03d177c0b38ae"
+				}],
+				"calculation": {
+					"netOffCommercialHead": "Gross",
+					"calculationType": "Net Off"
+				},
+				"holidayProduct": [],
+				"product": [{
+					"productId": "",
+					"chain": "Outrigger Hospitality",
+					"brand": "Adina Apartment Hotels",
+					"_id": "5a6047f781a03d177c0b38af"
+				}],
+				"slab": [{
+					"isCumulative": false,
+					"slabType": "No. of Passengers",
+					"isPercentage": true,
+					"isAmount": false,
+					"currency": "",
+					"valueAmount": 0,
+					"_id": "5a6047f781a03d177c0b38b0",
+					"percentageDetails": [{
+						"valuePercentage": 2,
+						"farePriceComponents": "Fare Or Price Component",
+						"_id": "5a6047f781a03d177c0b38b1"
+					}],
+					"currencyDetails": [{
+						"currency": "BOB BOV",
+						"fromValue": 1,
+						"toValue": 234,
+						"_id": "5a6047f781a03d177c0b38b2"
+					}]
+				}],
+				"commercialInformation": {
+					"commercialDescription": "df gfdgfdhgh",
+					"commercialType": "Receivable"
+				}
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Destination Incentives",
+				"groupName": "destinationIncentives"
+			}
+		}
+	}, {
+		"_id": "ADC256",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-07T12:14:01.894Z",
+		"createdAt": "2018-01-18T07:09:24.409Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"isTransactional": true,
+				"advanceDefinationId": "",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"policies": [],
+				"media": [],
+				"IATANumbers": ["534", "110"],
+				"client": [{
+					"clientType": "B2C",
+					"clientgroup": "",
+					"clientName": "",
+					"_id": "5a60482481a03d177c0b38b3"
+				}],
+				"calculation": {
+					"calculationType": "Gross",
+					"netOffCommercialHead": ""
+				},
+				"product": [],
+				"slab": [{
+					"isCumulative": true,
+					"slabType": "No. of Passengers",
+					"isPercentage": true,
+					"isAmount": false,
+					"currency": "",
+					"valueAmount": 0,
+					"_id": "5a60482481a03d177c0b38b4",
+					"percentageDetails": [{
+						"valuePercentage": 1,
+						"farePriceComponents": "Fare Or Price Component",
+						"_id": "5a60482481a03d177c0b38b5"
+					}],
+					"currencyDetails": [{
+						"currency": "BOB BOV",
+						"fromValue": 1,
+						"toValue": 23,
+						"_id": "5a60482481a03d177c0b38b6"
+					}]
+				}],
+				"commercialInformation": {
+					"commercialType": "Receivable",
+					"commercialDescription": "d fd gfdfgh"
+				}
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"groupName": "sectorIncentives",
+				"displayName": "Sector Incentives"
+			}
+		}
+	}, {
+		"_id": "ADC257",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-07T12:22:12.191Z",
+		"createdAt": "2018-01-18T07:10:10.292Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"advanceDefinationId": "",
+				"isTransactional": true,
+				"policies": [],
+				"media": [],
+				"IATANumbers": ["545", "112"],
+				"supplierRate": [],
+				"client": [{
+					"clientType": "B2B",
+					"clientgroup": "",
+					"clientName": "",
+					"_id": "5a60485281a03d177c0b38b7"
+				}],
+				"calculation": {
+					"netOffCommercialHead": "",
+					"calculationType": "Gross"
+				},
+				"product": [{
+					"productId": "",
+					"chain": "Athens Hotels Group",
+					"brand": "Arcotel Hotels",
+					"_id": "5a60485281a03d177c0b38b8"
+				}],
+				"slab": [{
+					"segments": "Active",
+					"isCumulative": false,
+					"slabType": "No. of Passengers",
+					"isPercentage": true,
+					"isAmount": false,
+					"currency": "",
+					"valueAmount": 0,
+					"_id": "5a60485281a03d177c0b38b9",
+					"percentageDetails": [{
+						"valuePercentage": 12,
+						"farePriceComponents": "Fare Or Price Component",
+						"_id": "5a60485281a03d177c0b38ba"
+					}],
+					"currencyDetails": [{
+						"currency": "BMD",
+						"fromValue": 1,
+						"toValue": 345,
+						"_id": "5a60485281a03d177c0b38bb"
+					}]
+				}],
+				"commercialInformation": {
+					"commercialDescription": "g dfgfdgh",
+					"commercialType": "Receivable"
+				}
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Segment Fees",
+				"groupName": "segmentFees"
+			}
+		}
+	}, {
+		"_id": "ADC258",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-07T12:08:37.431Z",
+		"createdAt": "2018-01-18T07:10:43.131Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"advanceDefinationId": "",
+				"isSettlementTransactionWise": true,
+				"isTransactional": true,
+				"policies": [],
+				"media": [],
+				"IATANumbers": ["445", "121"],
+				"supplierRate": [],
+				"client": [{
+					"clientType": "Both",
+					"clientgroup": "",
+					"clientName": "",
+					"_id": "5a60487381a03d177c0b38bc"
+				}],
+				"holidayProduct": [],
+				"product": [{
+					"productId": "",
+					"chain": "Abad Hotels and Resorts",
+					"brand": "AC Hotels",
+					"_id": "5a60487381a03d177c0b38bd"
+				}],
+				"fixed": {
+					"unit": "",
+					"currency": "",
+					"valueAmount": 0,
+					"isAmount": false,
+					"isPercentage": true,
+					"percentageDetails": [{
+						"valuePercentage": 1,
+						"farePriceComponents": "Fare Or Price Component",
+						"_id": "5a60487381a03d177c0b38be"
+					}]
+				},
+				"commercialInformation": {
+					"commercialDescription": "sd gdfgfhgj ghj",
+					"commercialType": "Receivable"
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Service Charges",
+				"groupName": "serviceCharges"
+			}
+		}
+	}, {
+		"_id": "ADC259",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:35:05.532Z",
+		"createdAt": "2018-01-18T07:11:21.709Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"advanceDefinationId": "",
+				"isFixed": true,
+				"isSettlementTransactionWise": true,
+				"isTransactional": true,
+				"policies": [],
+				"media": [],
+				"IATANumbers": ["545", "112"],
+				"client": [{
+					"clientType": "B2C",
+					"clientgroup": "",
+					"clientName": "",
+					"_id": "5a60489981a03d177c0b38bf"
+				}],
+				"calculation": {
+					"netOffCommercialHead": "",
+					"calculationType": ""
+				},
+				"product": [{
+					"productId": "",
+					"_id": "5a60489981a03d177c0b38c0",
+					"otherDetail": [],
+					"seatClassNumber": []
+				}],
+				"fixed": {
+					"unit": "",
+					"currency": "",
+					"valueAmount": 0,
+					"isAmount": false,
+					"isPercentage": true,
+					"percentageDetails": [{
+						"valuePercentage": 24,
+						"farePriceComponents": "Fare Or Price Component",
+						"_id": "5a60489981a03d177c0b38c1"
+					}]
+				},
+				"commercialInformation": {
+					"commercialDescription": "sd gdfgfdh",
+					"commercialType": "Receivable"
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Issuance Fees",
+				"groupName": "issuanceFees"
+			}
+		}
+	}, {
+		"_id": "ADC260",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:35:00.898Z",
+		"createdAt": "2018-01-18T07:11:55.666Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"advanceDefinationId": "",
+				"isTransactional": true,
+				"policies": [],
+				"media": [],
+				"IATANumbers": ["110", "534"],
+				"client": [{
+					"clientType": "B2B",
+					"clientgroup": "",
+					"clientName": "",
+					"_id": "5a6048bb81a03d177c0b38c2"
+				}],
+				"calculation": {
+					"netOffCommercialHead": "",
+					"calculationType": "Gross"
+				},
+				"product": [],
+				"fixed": {
+					"currency": "",
+					"valueAmount": 0,
+					"isAmount": false,
+					"isPercentage": true,
+					"percentageDetails": [{
+						"valuePercentage": 12,
+						"farePriceComponents": "Fare Or Price Component",
+						"_id": "5a6048bb81a03d177c0b38c3"
+					}]
+				},
+				"commercialInformation": {
+					"commercialDescription": "df hfg hfgh",
+					"commercialType": "Receivable"
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Commission",
+				"groupName": "commission"
+			}
+		}
+	}, {
+		"_id": "ADC261",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:34:58.890Z",
+		"createdAt": "2018-01-18T07:12:27.476Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"advanceDefinationId": "",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"isFixed": false,
+				"frequency": "",
+				"isRefundable": false,
+				"isTransactional": true,
+				"media": [],
+				"applyOn": [{
+					"productCategory": "Accommodation",
+					"productCategorySubType": "Bungalows",
+					"_id": "5a6048db81a03d177c0b38c4"
+				}],
+				"percentage": [{
+					"appliedOnCommercialHead": "Productivity Linked Bonus",
+					"percent": 12,
+					"from": "2018-01-25T00:00:00.000Z",
+					"to": "2018-01-31T00:00:00.000Z",
+					"_id": "5a6048db81a03d177c0b38c5"
+				}],
+				"fixed": null,
+				"commercialInformation": {
+					"commercialDescription": "df gfhfgh",
+					"commercialType": "Payable"
+				}
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Maintenance Fees",
+				"groupName": "otherFees"
+			}
+		}
+	}, {
+		"_id": "ADC262",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:34:57.076Z",
+		"createdAt": "2018-01-18T07:12:51.790Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"advanceDefinationId": "",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-25T00:00:00.000Z",
+				"isFixed": true,
+				"frequency": "",
+				"isRefundable": false,
+				"isTransactional": true,
+				"media": [],
+				"applyOn": [{
+					"productCategory": "Accommodation",
+					"productCategorySubType": "Hostel",
+					"_id": "5a6048f381a03d177c0b38c6"
+				}],
+				"percentage": [],
+				"fixed": {
+					"value": 123,
+					"currency": "AOA"
+				},
+				"commercialInformation": {
+					"commercialDescription": "df gfd fgh",
+					"commercialType": "Payable"
+				}
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Integration Fees",
+				"groupName": "otherFees"
+			}
+		}
+	}, {
+		"_id": "ADC263",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:34:55.218Z",
+		"createdAt": "2018-01-18T07:13:24.252Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"advanceDefinationId": "",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-25T00:00:00.000Z",
+				"isFixed": false,
+				"frequency": "",
+				"isRefundable": false,
+				"isTransactional": true,
+				"media": [],
+				"applyOn": [{
+					"productCategory": "Activities",
+					"productCategorySubType": "Cultural Tours",
+					"_id": "5a60491481a03d177c0b38c7"
+				}],
+				"percentage": [{
+					"appliedOnCommercialHead": "Destination Incentives",
+					"percent": 12,
+					"from": "2018-01-31T00:00:00.000Z",
+					"to": "2018-02-28T00:00:00.000Z",
+					"_id": "5a60491481a03d177c0b38c8"
+				}],
+				"fixed": null,
+				"commercialInformation": {
+					"commercialDescription": "df gdf fgh",
+					"commercialType": "Receivable"
+				}
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Licence Fees",
+				"groupName": "otherFees"
+			}
+		}
+	}, {
+		"_id": "ADC264",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:34:53.002Z",
+		"createdAt": "2018-01-18T07:13:48.024Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"advanceDefinationId": "",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-25T00:00:00.000Z",
+				"isFixed": true,
+				"frequency": "",
+				"isRefundable": false,
+				"isTransactional": true,
+				"media": [],
+				"applyOn": [{
+					"productCategory": "Other Products",
+					"productCategorySubType": "Ancillary Products",
+					"_id": "5a60492c81a03d177c0b38c9"
+				}],
+				"percentage": [],
+				"fixed": {
+					"value": 1234,
+					"currency": "AWG"
+				},
+				"commercialInformation": {
+					"commercialDescription": "sdg dfgfdgh",
+					"commercialType": "Payable"
+				}
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Web service Fees",
+				"groupName": "otherFees"
+			}
+		}
+	}, {
+		"_id": "ADC265",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:34:50.993Z",
+		"createdAt": "2018-01-18T07:14:15.927Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"advanceDefinationId": "",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"isFixed": true,
+				"frequency": "",
+				"isRefundable": false,
+				"isTransactional": true,
+				"media": [],
+				"applyOn": [{
+					"productCategory": "Activities",
+					"productCategorySubType": "Walking & Biking Tours",
+					"_id": "5a60494781a03d177c0b38ca"
+				}],
+				"percentage": [],
+				"fixed": {
+					"value": 1234,
+					"currency": "BOB BOV"
+				},
+				"commercialInformation": {
+					"commercialDescription": "sdg dfgf",
+					"commercialType": "Payable"
+				}
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Loyalty Bonus",
+				"groupName": "otherFees"
+			}
+		}
+	}, {
+		"_id": "ADC266",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:34:48.833Z",
+		"createdAt": "2018-01-18T07:14:45.398Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"advanceDefinationId": "",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-25T00:00:00.000Z",
+				"isFixed": false,
+				"frequency": "",
+				"isRefundable": false,
+				"isTransactional": true,
+				"media": [],
+				"applyOn": [{
+					"productCategory": "Accommodation",
+					"productCategorySubType": "Castles ",
+					"_id": "5a60496581a03d177c0b38cb"
+				}],
+				"percentage": [{
+					"appliedOnCommercialHead": "Preference Benefit",
+					"percent": 1,
+					"from": "2018-01-02T00:00:00.000Z",
+					"to": "2018-01-31T00:00:00.000Z",
+					"_id": "5a60496581a03d177c0b38cc"
+				}],
+				"commercialInformation": {
+					"commercialDescription": "sdg dfgfh",
+					"commercialType": "Receivable"
+				}
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Preference Benifit",
+				"groupName": "otherFees"
+			}
+		}
+	}, {
+		"_id": "ADC267",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:28:57.310Z",
+		"createdAt": "2018-01-18T07:15:09.485Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"advanceDefinationId": "",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"isFixed": true,
+				"frequency": "",
+				"isRefundable": false,
+				"isTransactional": true,
+				"media": [],
+				"applyOn": [{
+					"productCategory": "Accommodation",
+					"productCategorySubType": "Hotel",
+					"_id": "5a60497d81a03d177c0b38cd"
+				}],
+				"percentage": [],
+				"fixed": {
+					"value": 234,
+					"currency": "ANG"
+				},
+				"commercialInformation": {
+					"commercialDescription": "sd fsd gfdg",
+					"commercialType": "Receivable"
+				}
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Retainer Fee",
+				"groupName": "otherFees"
+			}
+		}
+	}, {
+		"_id": "ADC268",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:28:54.365Z",
+		"createdAt": "2018-01-18T07:15:33.572Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"advanceDefinationId": "",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"isFixed": true,
+				"frequency": "",
+				"isRefundable": false,
+				"isTransactional": true,
+				"media": [],
+				"applyOn": [{
+					"productCategory": "Activities",
+					"productCategorySubType": "Tours & Sightseeing",
+					"_id": "5a60499581a03d177c0b38ce"
+				}],
+				"percentage": [],
+				"fixed": {
+					"value": 23456,
+					"currency": "BOB BOV"
+				},
+				"commercialInformation": {
+					"commercialDescription": "sdg dfg fh",
+					"commercialType": "Receivable"
+				}
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Listing Fee",
+				"groupName": "otherFees"
+			}
+		}
+	}, {
+		"_id": "ADC269",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:34:46.466Z",
+		"createdAt": "2018-01-18T07:16:00.437Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"advanceDefinationId": "",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-25T00:00:00.000Z",
+				"isFixed": false,
+				"frequency": "",
+				"isRefundable": false,
+				"isTransactional": true,
+				"media": [],
+				"applyOn": [{
+					"productCategory": "Activities",
+					"productCategorySubType": "Food Wine, & Night Life",
+					"_id": "5a6049b081a03d177c0b38cf"
+				}],
+				"percentage": [{
+					"appliedOnCommercialHead": "Preference Benefit",
+					"percent": 1,
+					"from": "2018-01-18T00:00:00.000Z",
+					"to": "2018-01-31T00:00:00.000Z",
+					"_id": "5a6049b081a03d177c0b38d0"
+				}],
+				"fixed": null,
+				"commercialInformation": {
+					"commercialDescription": "df gfd fdhgh",
+					"commercialType": "Receivable"
+				}
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Content Access Fees",
+				"groupName": "otherFees"
+			}
+		}
+	}, {
+		"_id": "ADC270",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:26:46.984Z",
+		"createdAt": "2018-01-18T07:16:38.105Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"advanceDefinationId": "",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"isFixed": true,
+				"frequency": "",
+				"isRefundable": false,
+				"isTransactional": true,
+				"media": [],
+				"applyOn": [{
+					"productCategory": "Activities",
+					"productCategorySubType": "Walking & Biking Tours",
+					"_id": "5a6049d681a03d177c0b38d1"
+				}],
+				"percentage": [],
+				"fixed": {
+					"value": 23434,
+					"currency": "BRL"
+				},
+				"commercialInformation": {
+					"commercialDescription": "fg fdghfgh",
+					"commercialType": "Payable"
+				}
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Sign Up Fees",
+				"groupName": "otherFees"
+			}
+		}
+	}, {
+		"_id": "ADC271",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-07T11:02:03.706Z",
+		"createdAt": "2018-01-18T07:17:05.851Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"contractValidityTo": "2018-03-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-02-06T00:00:00.000Z",
+				"isTransactional": true,
+				"media": [],
+				"signupBonusCriteria": [{
+					"slabType": "No of tickets",
+					"targetFrom": 2,
+					"targetTo": 23,
+					"periodFrom": "2018-02-07T00:00:00.000Z",
+					"periodTo": "2018-02-27T00:00:00.000Z",
+					"_id": "5a799f570ca71b382491858e"
+				}, {
+					"slabType": "No of tickets",
+					"targetFrom": 24,
+					"targetTo": 56,
+					"periodFrom": "2018-02-07T00:00:00.000Z",
+					"periodTo": "2018-02-28T00:00:00.000Z",
+					"_id": "5a799f570ca71b382491858d"
+				}],
+				"signupBonus": {
+					"value": 1234,
+					"currency": "BOB BOV"
+				},
+				"commercialInformation": {
+					"commercialDescription": "sdg fdgfd",
+					"commercialType": "Payable"
+				}
+			},
+			"commercialHeadInfo": {
+				"displayName": "Sign Up Bonus",
+				"groupName": "signupBonus"
+			}
+		}
+	}, {
+		"_id": "ADC272",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:26:43.042Z",
+		"createdAt": "2018-01-18T07:17:38.151Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"isLTBbyRatio": true,
+				"isTransactional": true,
+				"media": [],
+				"products": [],
+				"waiver": {
+					"LBWaiverTo": "2018-01-31T00:00:00.000Z",
+					"LBWaiverfrom": "2018-01-18T00:00:00.000Z"
+				},
+				"LTBbyRatio": [{
+					"bookRatio": 34,
+					"_id": "5a604a1281a03d177c0b38d3",
+					"amountPerExcessLook": {
+						"currency": "AOA",
+						"amount": 12433
+					},
+					"lookRatio": {
+						"from": 1,
+						"to": 23
+					}
+				}],
+				"commercialInformation": {
+					"commercialDescription": "sdg fdgfdh",
+					"commercialType": "Payable"
+				}
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Look To Book",
+				"groupName": "lookToBook"
+			}
+		}
+	}, {
+		"_id": "ADC273",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:26:41.353Z",
+		"createdAt": "2018-01-18T07:18:11.061Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-02T00:00:00.000Z",
+				"isTransactional": true,
+				"media": [],
+				"paymentRule": {
+					"MSFchargesType": "Off Us",
+					"transactionType": "Credit Card",
+					"cardTypes": ["Master"],
+					"paymentType": ["Credit Card", "Debit Card", "Cash Card", "NEFT"]
+				},
+				"fixed": {
+					"isServiceTaxApplied": true,
+					"isAmount": false,
+					"isPercentage": true,
+					"percentage": {
+						"value": 12
+					}
+				},
+				"commercialInformation": {
+					"commercialDescription": "xcv fgfdgfdg",
+					"commercialType": "Payable"
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "MSF Fees",
+				"groupName": "MSF Fees"
+			}
+		}
+	}, {
+		"_id": "ADC274",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-06T12:30:23.040Z",
+		"createdAt": "2018-01-18T07:18:35.571Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"isTransactional": true,
+				"isSingleTopUp": true,
+				"contractValidityFrom": "2018-01-04T00:00:00.000Z",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"monthly": {
+						"option2": {
+							"weekOfMonth": 0,
+							"dayOfWeek": "",
+							"repeatEvery": 0
+						},
+						"option1": {
+							"day": 0,
+							"repeatEvery": 0
+						}
+					},
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": [],
+				"commercialInformation": {
+					"commercialType": "Payable",
+					"commercialDescription": "sd fdgfdg"
+				}
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"groupName": "incentiveOnTopup",
+				"displayName": "Incentives On Top up"
+			}
+		}
+	}, {
+		"_id": "ADC275",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-07T12:00:50.961Z",
+		"createdAt": "2018-01-18T07:19:13.933Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"isTransactional": true,
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"media": [],
+				"returnOfPayable": [],
+				"fixed": {
+					"currency": "BND",
+					"value": 2345
+				},
+				"payable": {
+					"fixed": true,
+					"returnOfPayable": false
+				},
+				"commercialInformation": {
+					"commercialType": "Payable",
+					"commercialDescription": "dc fgsdgdfg"
+				}
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"groupName": "terminationFees",
+				"displayName": "Termination Fees"
+			}
+		}
+	}, {
+		"_id": "ADC276",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-30T13:11:33.678Z",
+		"createdAt": "2018-01-18T07:20:11.334Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"isTransactional": true,
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"media": [],
+				"penaltyCriteria": [{
+					"_id": "5a604aab81a03d177c0b38d5",
+					"penalty": {
+						"isTransactionWise": true,
+						"isPercentage": false,
+						"amount": {
+							"currency": "AOA",
+							"value": 345
+						},
+						"percent": {
+							"slabType": "No of tickets",
+							"percent": 21
+						}
+					},
+					"condition": {
+						"slabType": "No of tickets",
+						"targetFrom": 1,
+						"targetTo": 23,
+						"achievementPeriod": "Weekly",
+						"periodFrom": "2018-01-18T00:00:00.000Z",
+						"periodTo": "2018-01-31T00:00:00.000Z",
+						"minimumPercentToAchieve": {
+							"from": 1,
+							"to": 23
+						}
+					}
+				}, {
+					"_id": "5a706f05c169cf0dac962d46",
+					"penalty": {
+						"isTransactionWise": true,
+						"isPercentage": false,
+						"amount": {
+							"currency": "ANG",
+							"value": 123
+						}
+					},
+					"condition": {
+						"slabType": "No of tickets",
+						"targetFrom": 1,
+						"targetTo": 23,
+						"achievementPeriod": "Weekly",
+						"periodFrom": "2018-01-30T00:00:00.000Z",
+						"periodTo": "2018-02-06T00:00:00.000Z",
+						"minimumPercentToAchieve": {
+							"from": 1,
+							"to": 32
+						}
+					}
+				}],
+				"commercialInformation": {
+					"commercialType": "Payable",
+					"commercialDescription": "sdfg dgfdg"
+				}
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"groupName": "penaltyFeeOrKickBack",
+				"displayName": "Penalty Fee / Kick Back"
+			}
+		}
+	}, {
+		"_id": "ADC277",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:26:02.595Z",
+		"createdAt": "2018-01-18T07:23:48.438Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"advanceDefinitionId": "",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"contractValidityFrom": "2018-01-18T00:00:00.000Z",
+				"isSlab": false,
+				"isTransactional": true,
+				"media": [],
+				"freeOfCostUtilization": [{
+					"productCategory": "Accommodation",
+					"productCategorySubType": "Hotel",
+					"productId": "",
+					"_id": "5a604b8481a03d177c0b38d6"
+				}],
+				"slabOrRunning": [{
+					"isfreeOfCostRooms": true,
+					"_id": "5a604b8481a03d177c0b38d7",
+					"supplierRate": [],
+					"client": [{
+						"clientType": "B2C",
+						"clientGroup": "",
+						"clientName": "",
+						"_id": "5a604b8481a03d177c0b38d8"
+					}],
+					"products": [{
+						"productId": "",
+						"chain": "AC Hotels",
+						"brand": "AC Hotels",
+						"_id": "5a604b8481a03d177c0b38d9"
+					}],
+					"freeOfCostUpgrades": {
+						"upgradeToRoomCategory": "",
+						"noOfUpgrades": 12,
+						"freeOfCostPercent": 12,
+						"priceComponents": []
+					},
+					"freeOfCostRoom": {
+						"roomCategory": "1 Bedroom Apartment with Balcony",
+						"roomType": "Child No Bed",
+						"noOfRooms": 1,
+						"freeOfCostPercent": 23,
+						"priceComponents": ["Fare Or Price Component"]
+					},
+					"running": {
+						"every": "12",
+						"typeIs": "Passengers",
+						"roomCategory": "3 Bedroom Apartment"
+					},
+					"slab": {
+						"slabType": "No of tickets",
+						"roomCategory": "3 Bedroom Apartment",
+						"fromValue": 12,
+						"toValue": 34
+					}
+				}],
+				"commercialInformation": {
+					"isPLBApplicable": false,
+					"commercialDescription": "sd fsdfdg",
+					"commercialType": "Payable"
+				}
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"displayName": "Free Of Cost (FOC)",
+				"groupName": "FOC"
+			}
+		}
+	}, {
+		"_id": "ADC278",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-01-18T07:34:41.438Z",
+		"createdAt": "2018-01-18T07:24:17.014Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"media": [],
+				"slabs": []
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"isTransactional": true,
+				"isRefundable": false,
+				"frequency": "",
+				"isFixed": true,
+				"contractValidityFrom": "2018-01-25T00:00:00.000Z",
+				"contractValidityTo": "2018-01-31T00:00:00.000Z",
+				"advanceDefinationId": "",
+				"media": [],
+				"applyOn": [{
+					"productCategory": "Activities",
+					"productCategorySubType": "Cultural Tours",
+					"_id": "5a604ba181a03d177c0b38da"
+				}],
+				"percentage": [],
+				"fixed": {
+					"currency": "AUD",
+					"value": 1234
+				},
+				"commercialInformation": {
+					"commercialType": "Payable",
+					"commercialDescription": "sdf sdfgfdg"
+				}
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"groupName": "otherFees",
+				"displayName": "Lost Tickets"
+			}
+		}
+	}, {
+		"_id": "ADC279",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-07T12:22:18.344Z",
+		"createdAt": "2018-01-18T07:24:47.712Z",
+		"advanceCommercial": {
+			"commercialId": "SCMC302",
+			"commissionFlights": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"serviceCharge": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"issuanceFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"segmentFees": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"sectorWiseIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"client": [],
+				"product": [],
+				"slab": []
+			},
+			"destinationIncentives": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"plb": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": []
+			},
+			"overRidingCommission": {
+				"policies": [],
+				"media": [],
+				"IATANumbers": [],
+				"supplierRate": [],
+				"client": [],
+				"holidayProduct": [],
+				"product": [],
+				"slab": [],
+				"fixed": {
+					"percentageDetails": []
+				}
+			},
+			"freeOfCostHolidays": {
+				"media": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostActivities": {
+				"policies": [],
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabsOrRunning": []
+			},
+			"freeOfCostAccommodation": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"freeOfCostFlights": {
+				"media": [],
+				"freeOfCostUtilization": [],
+				"slabOrRunning": []
+			},
+			"MSfFees": {
+				"media": [],
+				"paymentRule": {
+					"cardTypes": [],
+					"paymentType": []
+				}
+			},
+			"penaltyFeeOrKickBack": {
+				"media": [],
+				"penaltyCriteria": []
+			},
+			"terminationFees": {
+				"media": [],
+				"returnOfPayable": []
+			},
+			"remittanceFees": {
+				"isTransactional": true,
+				"isFixed": true,
+				"effectiveFrom": "2018-01-18T00:00:00.000Z",
+				"effectiveTo": "2018-01-31T00:00:00.000Z",
+				"media": [],
+				"slabs": [{
+					"currency": "AFN",
+					"transactionFromValue": 1,
+					"transactionToValue": 34,
+					"isPercentage": true,
+					"_id": "5a604bbf81a03d177c0b38db",
+					"amount": {
+						"currency": "",
+						"value": 0
+					}
+				}],
+				"fixed": {
+					"isPercentage": true,
+					"percent": 1234567890,
+					"amount": {
+						"currency": "",
+						"value": 0
+					}
+				},
+				"commercialInformation": {
+					"commercialType": "Payable",
+					"commercialDescription": "sd gfdgfdh"
+				}
+			},
+			"incentiveOnTopup": {
+				"media": [],
+				"rateType": [],
+				"periodicity": {
+					"fortnightly": [],
+					"weekly": [],
+					"daily": []
+				},
+				"topUpAmount": []
+			},
+			"lookToBook": {
+				"media": [],
+				"products": [],
+				"LTBbyRatio": []
+			},
+			"otherFees": {
+				"media": [],
+				"applyOn": [],
+				"percentage": []
+			},
+			"signupBonus": {
+				"media": [],
+				"signupBonusCriteria": []
+			},
+			"commercialHeadInfo": {
+				"groupName": "remittanceFees",
+				"displayName": "Remittance Fees"
+			}
+		}
+	}],
+	"advanceDefinationData": [{
+		"_id": "SCAD112",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-01T09:59:13.643Z",
+		"createdAt": "2018-02-01T09:59:13.628Z",
+		"advanceDefinitionHolidays": {
+			"tourTypes": [],
+			"applicableOn": [],
+			"passengerType": {
+				"passengerType": []
+			},
+			"nationality": {
+				"clientNationality": []
+			},
+			"credentials": [],
+			"roomLevel": {
+				"roomTypes": [],
+				"roomCategories": []
+			},
+			"travelDestinations": [],
+			"validity": {
+				"travelSales": [],
+				"sales": []
+			}
+		},
+		"advanceDefinitionTransportation": {
+			"vehicleDetails": {
+				"vehicles": []
+			},
+			"nationality": {
+				"clientNationality": []
+			},
+			"passengerTypes": [],
+			"credentials": [],
+			"travelDestination": {
+				"destinations": []
+			},
+			"validity": {
+				"salePlusTravel": [],
+				"travel": [],
+				"sale": []
+			}
+		},
+		"advanceDefinitionActivities": {
+			"nationality": {
+				"clientNationality": []
+			},
+			"passengerTypes": [],
+			"credentials": [],
+			"travelDestination": {
+				"destinations": []
+			},
+			"validity": {
+				"salePlusTravel": [],
+				"travel": [],
+				"sale": []
+			}
+		},
+		"advanceDefinitionAccommodationPLB": {
+			"nationality": [{
+				"clientNationality": "American",
+				"_id": "5a72e4f10cfbe1250c3f95fa",
+				"triggerOrPayout": ["payout"]
+			}],
+			"passenger": [],
+			"credentials": [{
+				"credentialId": "2",
+				"_id": "5a72e4f10cfbe1250c3f95fb",
+				"triggerOrPayout": ["payout"]
+			}],
+			"connectivity": {
+				"supplierType": "Enabler",
+				"supplierId": "fdghfghfg",
+				"triggerOrPayout": ["payout"]
+			},
+			"others": {
+				"isInclusion": false,
+				"bookingType": {
+					"bookingType": "timelimitbooking",
+					"triggerOrPayout": ["payout"]
+				},
+				"roomTypes": [{
+					"roomTypes": "Triple Room",
+					"_id": "5a72e4f10cfbe1250c3f95fc",
+					"triggerOrPayout": ["payout"]
+				}],
+				"roomCategories": [{
+					"roomCategory": "2 Bedroom Villa",
+					"_id": "5a72e4f10cfbe1250c3f95fd",
+					"triggerOrPayout": ["trigger"]
+				}]
+			},
+			"travelDestination": {
+				"isInclusion": false,
+				"travel": []
+			},
+			"validity": {
+				"validityType": "sale",
+				"salePlusTravel": [],
+				"travel": [],
+				"sale": [{
+					"saleFrom": "2018-03-01T00:00:00.000Z",
+					"saleTo": "2018-03-31T00:00:00.000Z",
+					"blockOutFrom": "2018-03-01T00:00:00.000Z",
+					"blockOutTo": "2018-03-31T00:00:00.000Z",
+					"_id": "5a72e4f10cfbe1250c3f95fe",
+					"triggerOrPayout": ["trigger"]
+				}]
+			}
+		},
+		"advanceDefinitionAccommodation": {
+			"nationality": {
+				"clientNationality": []
+			},
+			"passengerTypes": [],
+			"credentials": [],
+			"others": {
+				"roomTypes": {
+					"roomTypes": []
+				},
+				"roomCategories": {
+					"roomCategories": []
+				}
+			},
+			"travelDestination": {
+				"destinations": []
+			},
+			"salePlusTravel": [],
+			"validity": {
+				"travel": [],
+				"sale": []
+			}
+		},
+		"advanceDefinitionAir": {
+			"passengerTypes": [],
+			"credentials": [],
+			"fareClass": {
+				"dealCodes": {
+					"dealCodes": []
+				},
+				"fareBasis": {
+					"fare": []
+				}
+			},
+			"bookingClass": {
+				"cabin": []
+			},
+			"flightTimings": {
+				"flightTimings": []
+			},
+			"flightNumbers": {
+				"flightRange": []
+			},
+			"travelDestination": {
+				"destinations": [],
+				"journeyType": [],
+				"soldAndTicketingOptions": []
+			},
+			"validity": {
+				"ticketingPlusTravel": [],
+				"travel": [],
+				"ticketing": []
+			}
+		}
+	}, {
+		"_id": "SCAD117",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-05T09:28:01.776Z",
+		"createdAt": "2018-02-01T10:53:33.727Z",
+		"advanceDefinitionHolidays": {
+			"tourTypes": [],
+			"applicableOn": [],
+			"passengerType": {
+				"passengerType": []
+			},
+			"nationality": {
+				"clientNationality": []
+			},
+			"credentials": [],
+			"roomLevel": {
+				"roomTypes": [],
+				"roomCategories": []
+			},
+			"travelDestinations": [],
+			"validity": {
+				"travelSales": [],
+				"sales": []
+			}
+		},
+		"advanceDefinitionTransportation": {
+			"vehicleDetails": {
+				"vehicles": []
+			},
+			"nationality": {
+				"clientNationality": []
+			},
+			"passengerTypes": [],
+			"credentials": [],
+			"travelDestination": {
+				"destinations": []
+			},
+			"validity": {
+				"salePlusTravel": [],
+				"travel": [],
+				"sale": []
+			}
+		},
+		"advanceDefinitionActivities": {
+			"nationality": {
+				"clientNationality": []
+			},
+			"passengerTypes": [],
+			"credentials": [],
+			"travelDestination": {
+				"destinations": []
+			},
+			"validity": {
+				"salePlusTravel": [],
+				"travel": [],
+				"sale": []
+			}
+		},
+		"advanceDefinitionAccommodationPLB": {
+			"nationality": [],
+			"passenger": [],
+			"credentials": [],
+			"connectivity": {
+				"triggerOrPayout": []
+			},
+			"others": {
+				"bookingType": {
+					"triggerOrPayout": []
+				},
+				"roomTypes": [],
+				"roomCategories": []
+			},
+			"travelDestination": {
+				"travel": []
+			},
+			"validity": {
+				"salePlusTravel": [],
+				"travel": [],
+				"sale": []
+			}
+		},
+		"advanceDefinitionAccommodation": {
+			"nationality": {
+				"isInclusion": true,
+				"clientNationality": ["Indian"]
+			},
+			"passengerTypes": ["Child", "Adult"],
+			"credentials": ["1", "3"],
+			"connectivity": {
+				"supplierType": "Enabler",
+				"supplierId": "dfg ghfgh"
+			},
+			"others": {
+				"bookingType": "paidbooking",
+				"roomTypes": {
+					"isInclusion": false,
+					"roomTypes": ["Quad Cabin"]
+				},
+				"roomCategories": {
+					"isInclusion": true,
+					"roomCategories": ["1 Bedroom Superior Apartment"]
+				}
+			},
+			"travelDestination": {
+				"isInclusion": true,
+				"destinations": [{
+					"continent": "Asia",
+					"_id": "5a72f1adde9ccd266c0208f5"
+				}, {
+					"continent": "America",
+					"_id": "5a72f1adde9ccd266c0208f4"
+				}]
+			},
+			"salePlusTravel": [],
+			"validity": {
+				"validityType": "sale",
+				"travel": [],
+				"sale": [{
+					"saleFrom": "2018-02-01T00:00:00.000Z",
+					"saleTo": "2018-02-28T00:00:00.000Z",
+					"blockOutFrom": "2018-02-06T00:00:00.000Z",
+					"blockOutTo": "2018-02-28T00:00:00.000Z",
+					"_id": "5a7823a112c37129c2f32622"
+				}]
+			}
+		},
+		"advanceDefinitionAir": {
+			"passengerTypes": [],
+			"credentials": [],
+			"fareClass": {
+				"dealCodes": {
+					"dealCodes": []
+				},
+				"fareBasis": {
+					"fare": []
+				}
+			},
+			"bookingClass": {
+				"cabin": []
+			},
+			"flightTimings": {
+				"flightTimings": []
+			},
+			"flightNumbers": {
+				"flightRange": []
+			},
+			"travelDestination": {
+				"destinations": [],
+				"journeyType": [],
+				"soldAndTicketingOptions": []
+			},
+			"validity": {
+				"ticketingPlusTravel": [],
+				"travel": [],
+				"ticketing": []
+			}
+		}
+	}, {
+		"_id": "SCAD119",
+		"__v": 0,
+		"deleted": false,
+		"lastUpdated": "2018-02-01T13:05:40.461Z",
+		"createdAt": "2018-02-01T13:05:40.449Z",
+		"advanceDefinitionHolidays": {
+			"tourTypes": [],
+			"applicableOn": [],
+			"passengerType": {
+				"passengerType": []
+			},
+			"nationality": {
+				"clientNationality": []
+			},
+			"credentials": [],
+			"roomLevel": {
+				"roomTypes": [],
+				"roomCategories": []
+			},
+			"travelDestinations": [],
+			"validity": {
+				"travelSales": [],
+				"sales": []
+			}
+		},
+		"advanceDefinitionTransportation": {
+			"vehicleDetails": {
+				"vehicles": []
+			},
+			"nationality": {
+				"clientNationality": []
+			},
+			"passengerTypes": [],
+			"credentials": [],
+			"travelDestination": {
+				"destinations": []
+			},
+			"validity": {
+				"salePlusTravel": [],
+				"travel": [],
+				"sale": []
+			}
+		},
+		"advanceDefinitionActivities": {
+			"nationality": {
+				"clientNationality": []
+			},
+			"passengerTypes": [],
+			"credentials": [],
+			"travelDestination": {
+				"destinations": []
+			},
+			"validity": {
+				"salePlusTravel": [],
+				"travel": [],
+				"sale": []
+			}
+		},
+		"advanceDefinitionAccommodationPLB": {
+			"nationality": [],
+			"passenger": [],
+			"credentials": [],
+			"connectivity": {
+				"triggerOrPayout": []
+			},
+			"others": {
+				"bookingType": {
+					"triggerOrPayout": []
+				},
+				"roomTypes": [],
+				"roomCategories": []
+			},
+			"travelDestination": {
+				"travel": []
+			},
+			"validity": {
+				"salePlusTravel": [],
+				"travel": [],
+				"sale": []
+			}
+		},
+		"advanceDefinitionAccommodation": {
+			"nationality": {
+				"isInclusion": true,
+				"clientNationality": ["American"]
+			},
+			"passengerTypes": ["Child", "Senior Citizen"],
+			"credentials": ["1", "2"],
+			"connectivity": {
+				"supplierType": "Enabler",
+				"supplierId": "sdf sdgfdg"
+			},
+			"others": {
+				"bookingType": "paidbooking",
+				"roomTypes": {
+					"isInclusion": true,
+					"roomTypes": ["Double Room + Child No Bed"]
+				},
+				"roomCategories": {
+					"isInclusion": false,
+					"roomCategories": ["1 Bedroom Apartment with Balcony"]
+				}
+			},
+			"travelDestination": {
+				"isInclusion": true,
+				"destinations": [{
+					"continent": "Africa",
+					"country": "Benin",
+					"state": "All",
+					"city": "All",
+					"_id": "5a7310a40cfbe1250c3f9601"
+				}]
+			},
+			"salePlusTravel": [],
+			"validity": {
+				"validityType": "sale",
+				"travel": [],
+				"sale": [{
+					"saleFrom": "2018-02-01T00:00:00.000Z",
+					"saleTo": "2018-02-28T00:00:00.000Z",
+					"blockOutFrom": "2018-02-02T00:00:00.000Z",
+					"blockOutTo": "2018-02-28T00:00:00.000Z",
+					"_id": "5a7310a40cfbe1250c3f9602"
+				}]
+			}
+		},
+		"advanceDefinitionAir": {
+			"passengerTypes": [],
+			"credentials": [],
+			"fareClass": {
+				"dealCodes": {
+					"dealCodes": []
+				},
+				"fareBasis": {
+					"fare": []
+				}
+			},
+			"bookingClass": {
+				"cabin": []
+			},
+			"flightTimings": {
+				"flightTimings": []
+			},
+			"flightNumbers": {
+				"flightRange": []
+			},
+			"travelDestination": {
+				"destinations": [],
+				"journeyType": [],
+				"soldAndTicketingOptions": []
+			},
+			"validity": {
+				"ticketingPlusTravel": [],
+				"travel": [],
+				"ticketing": []
+			}
+		}
+	}]
+}
+
+
