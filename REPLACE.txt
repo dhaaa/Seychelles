@@ -1,0 +1,259 @@
+package cnk.transformation;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+public class SupplierCalculationDT {
+
+	public static JSONObject createCalculationDT(JSONObject req,JSONObject mdmDefn,String commName,String mdmCommName,int id) throws JSONException{
+		JSONObject calcJson = new JSONObject(); 
+		calcJson.put("type","calculation");
+		if(commName.equals("Standard"))
+		 {calcJson.put("RuleID",mdmDefn.getJSONObject("SupplierCommercialData").get("_id"));
+			calcJson.put("selectedRow",mdmDefn.getJSONObject("SupplierCommercialData").get("_id"));}
+		 else
+		 {calcJson.put("RuleID",mdmDefn.getJSONArray("advanceCommercialData").getJSONObject(id).get("_id"));
+			 calcJson.put("selectedRow",mdmDefn.getJSONArray("advanceCommercialData").getJSONObject(id).get("_id"));}
+		  
+		//calcJson.put("supplier",mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("commercialDefinition").get("supplierId"));
+		//calcJson.put("supplierMarket",mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("commercialDefinition").getJSONArray("supplierMarkets"));
+		//calcJson.put("productCategorySubType",mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("commercialDefinition").get("productCategorySubType"));
+		JSONArray tempChainArr=new JSONArray();
+		JSONArray tempBrandArr=new JSONArray();
+		JSONArray tempNameArr=new JSONArray();
+		
+		
+		if(commName.equals("Standard"))
+		{	
+			for(int l=0;l<mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("standardCommercial").getJSONObject("product").getJSONObject("accommodation").getJSONArray("productInformation").length() && mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("standardCommercial").getJSONObject("product").getJSONObject("accommodation").getJSONArray("productInformation").length()>0;l++)
+			{
+			
+				Object tempChainObj=mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("standardCommercial").getJSONObject("product").getJSONObject("accommodation").getJSONArray("productInformation").getJSONObject(l).get("chain");
+				Object tempBrandObj=mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("standardCommercial").getJSONObject("product").getJSONObject("accommodation").getJSONArray("productInformation").getJSONObject(l).get("brand");
+			 
+				if(mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("standardCommercial").getJSONObject("product").getJSONObject("accommodation").getJSONArray("productInformation").getJSONObject(l).has("name"))
+					{
+						Object tempNameObj = mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("standardCommercial").getJSONObject("product").getJSONObject("accommodation").getJSONArray("productInformation").getJSONObject(l).get("name");
+						tempNameArr.put(tempNameObj);
+					}
+				tempChainArr.put(tempChainObj);
+				tempBrandArr.put(tempBrandObj);
+			
+			}
+		}
+		else
+		{
+			JSONObject tmp=new JSONObject();
+			tmp=mdmDefn.getJSONArray("advanceCommercialData").getJSONObject(id).getJSONObject("advanceCommercial").getJSONObject(mdmCommName);
+			for(int l=0;l<tmp.getJSONArray("product").length() && tmp.getJSONArray("product").length()>0;l++)
+			{
+			
+				Object tempChainObj=tmp.getJSONArray("product").getJSONObject(l).get("chain");
+				Object tempBrandObj=tmp.getJSONArray("product").getJSONObject(l).get("brand");
+			 
+				if(tmp.getJSONArray("product").getJSONObject(l).has("name"))
+					{
+						Object tempNameObj = tmp.getJSONArray("product").getJSONObject(l).get("name");
+						tempNameArr.put(tempNameObj);
+					}
+				tempChainArr.put(tempChainObj);
+				tempBrandArr.put(tempBrandObj);
+			
+			}
+		}
+		if(tempChainArr.length()>0)
+		calcJson.put("productChain",tempChainArr);
+		if(tempBrandArr.length()>0)
+		calcJson.put("productBrand",tempBrandArr);
+		if(tempNameArr.length()>0)
+		calcJson.put("productName",tempNameArr);
+		
+		//=======================================Room Details=======================================================
+		
+		JSONArray RoomCtgsArr=new JSONArray();
+		JSONObject RoomCtgsObj=new JSONObject();
+		
+		JSONArray RoomTpArr=new JSONArray();
+		JSONObject RoomTpObj=new JSONObject();
+		
+
+		Object tmp=new Object();
+		
+		
+		for(int i=0;i<mdmDefn.getJSONArray("advanceDefinationData").length();i++)
+		{	
+			
+		
+			if(commName.equals("Standard"))
+				if(mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("standardCommercial").get("advanceDefinationId").toString().length()>0)
+				{tmp=mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("standardCommercial").get("advanceDefinationId");}
+				else
+				{tmp=null;}
+			else
+				if(mdmDefn.getJSONArray("advanceCommercialData").getJSONObject(id).getJSONObject("advanceCommercial").getJSONObject(mdmCommName).get("advanceDefinationId").toString().length()>0)
+				{tmp=mdmDefn.getJSONArray("advanceCommercialData").getJSONObject(id).getJSONObject("advanceCommercial").getJSONObject(mdmCommName).get("advanceDefinationId");}
+				else
+				{tmp=null;}
+			if(tmp!=null)
+			{
+			if((mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).get("_id").equals(tmp))
+				 && mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("commercialDefinition").get("productCategory").equals("Accommodation"))
+			{
+				
+				//============================================RoomCategories===================================================
+				if(mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomCategories").has("isInclusion") && mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomCategories").get("isInclusion").equals(true))
+				{
+					JSONArray RoomCtgryInclsnArr=new JSONArray();
+					JSONObject RoomCtgryInclsnObj=new JSONObject();
+					for(int j=0;j<mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomCategories").getJSONArray("roomCategories").length();j++)
+					{
+						
+						RoomCtgryInclsnObj.put("roomCategory",mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomCategories").getJSONArray("roomCategories").get(j));
+						RoomCtgryInclsnArr.put(RoomCtgryInclsnObj);
+						
+						
+					}
+					RoomCtgsObj.put("inclusion", RoomCtgryInclsnArr);
+					RoomCtgsArr.put(RoomCtgsObj);
+					
+				}
+				else
+				{
+					
+					JSONArray RoomCtgryExclsnArr=new JSONArray();
+					JSONObject RoomCtgryExclsnObj=new JSONObject();
+					
+					for(int j=0;j<mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomCategories").getJSONArray("roomCategories").length();j++)
+					{
+						
+						RoomCtgryExclsnObj.put("roomCategory",mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomCategories").getJSONArray("roomCategories").get(j));
+						RoomCtgryExclsnArr.put(RoomCtgryExclsnObj);
+												
+					}
+					RoomCtgsObj.put("exclusion", RoomCtgryExclsnArr);
+					RoomCtgsArr.put(RoomCtgsObj);
+									
+				}
+				
+				//============================================RoomTypes===================================================
+				
+				if(mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomTypes").has("isInclusion") && mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomTypes").get("isInclusion").equals(true))
+				{
+					JSONArray RoomTypeInclsnArr=new JSONArray();
+					JSONObject RoomTypeInclsnObj=new JSONObject();
+					for(int j=0;j<mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomTypes").getJSONArray("roomTypes").length();j++)
+					{
+						
+						RoomTypeInclsnObj.put("roomType",mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomTypes").getJSONArray("roomTypes").get(j));
+						RoomTypeInclsnArr.put(RoomTypeInclsnObj);
+						
+						
+					}
+					RoomTpObj.put("inclusion", RoomTypeInclsnArr);
+					RoomTpArr.put(RoomTpObj);
+					
+					
+				}
+				else
+				{
+					
+					JSONArray RoomTypeExclsnArr=new JSONArray();
+					JSONObject RoomTypeExclsnObj=new JSONObject();
+					
+					for(int j=0;j<mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomCategories").getJSONArray("roomCategories").length();j++)
+					{
+						
+						RoomTypeExclsnObj.put("roomType",mdmDefn.getJSONArray("advanceDefinationData").getJSONObject(i).getJSONObject("advanceDefinitionAccommodation").getJSONObject("others").getJSONObject("roomCategories").getJSONArray("roomCategories").get(j));
+						RoomTypeExclsnArr.put(RoomTypeExclsnObj);
+												
+					}
+					RoomTpObj.put("exclusion",RoomTypeExclsnArr);
+					RoomTpArr.put(RoomTpObj);
+									
+				}
+				
+				
+					if(RoomCtgsArr.length()>0)
+					calcJson.put("RoomCategories",RoomCtgsArr);
+					if(RoomTpArr.length()>0)
+					calcJson.put("RoomTypes",RoomTpArr);
+					
+				}
+			}
+				
+			}	
+		
+		JSONObject tempObj=new JSONObject();
+		if(commName.equals("Standard"))
+		{
+			tempObj=mdmDefn.getJSONObject("SupplierCommercialData").getJSONObject("standardCommercial");
+		}
+		else
+			tempObj=mdmDefn.getJSONArray("advanceCommercialData").getJSONObject(id).getJSONObject("advanceCommercial").getJSONObject(mdmCommName);
+			
+			if(tempObj.has("fixed"))
+			{
+				if(tempObj.getJSONObject("fixed").has("isPercentage") && tempObj.getJSONObject("fixed").get("isPercentage").equals(true))
+				{
+					String finalFareComp="",tempFareComp=null;
+					calcJson.put("percentage",tempObj.getJSONObject("fixed").getJSONArray("percentageDetails").getJSONObject(0).get("valuePercentage").toString());
+					for (int ind=0;ind<tempObj.getJSONObject("fixed").getJSONArray("percentageDetails").length();ind++){
+						
+						tempFareComp=tempObj.getJSONObject("fixed").getJSONArray("percentageDetails").getJSONObject(ind).get("farePriceComponents").toString();
+						finalFareComp=finalFareComp+tempFareComp+ ",";
+					}
+					finalFareComp=finalFareComp.substring(0,finalFareComp.lastIndexOf(","));
+					calcJson.put("fareComponent",finalFareComp);
+				}
+				if(tempObj.getJSONObject("fixed").has("isAmount") && tempObj.getJSONObject("fixed").get("isAmount").equals(true))
+				{
+					calcJson.put("amountValue",tempObj.getJSONObject("fixed").get("valueAmount"));
+				}
+				if(tempObj.getJSONObject("fixed").has("currency"))
+					calcJson.put("currency",tempObj.getJSONObject("fixed").get("currency"));
+			
+			}
+			else if(tempObj.has("slab"))
+			{
+				if(tempObj.getJSONArray("slab").length()>0)
+				{
+					JSONObject slabDtls=new JSONObject();
+					for(int i=0;i< tempObj.getJSONArray("slab").length();i++){
+						slabDtls.put("slabType",tempObj.getJSONArray("slab").getJSONObject(i).get("slabType"));
+						JSONObject slabValueObj=new JSONObject();
+						JSONArray slabValueArr=new JSONArray();
+						slabValueObj.put("from", tempObj.getJSONArray("slab").getJSONObject(i).getJSONArray("currencyDetails").getJSONObject(0).get("fromValue"));
+						slabValueObj.put("to", tempObj.getJSONArray("slab").getJSONObject(i).getJSONArray("currencyDetails").getJSONObject(0).get("toValue"));
+						slabValueObj.put("OPERATOR","between");
+						slabValueArr.put(slabValueObj);
+						slabDtls.put("slabTypeValue",slabValueArr);
+						calcJson.put("slabDetails",slabDtls);
+						
+						if(tempObj.getJSONArray("slab").getJSONObject(i).has("valueAmount"))
+							calcJson.put("amountValue",tempObj.getJSONArray("slab").getJSONObject(i).get("valueAmount"));
+
+						if(tempObj.getJSONArray("slab").getJSONObject(i).get("isPercentage").equals(true))
+						{
+							String finalFareComp="",tempFareComp=null;
+							calcJson.put("percentage",tempObj.getJSONArray("slab").getJSONObject(i).getJSONArray("percentageDetails").getJSONObject(0).get("valuePercentage").toString());
+							for (int ind=0;ind<tempObj.getJSONArray("slab").getJSONObject(i).getJSONArray("percentageDetails").length();ind++){
+								
+								tempFareComp=tempObj.getJSONArray("slab").getJSONObject(i).getJSONArray("percentageDetails").getJSONObject(ind).get("farePriceComponents").toString();
+								finalFareComp=finalFareComp+tempFareComp+ ",";
+							}
+							finalFareComp=finalFareComp.substring(0,finalFareComp.lastIndexOf(","));
+							calcJson.put("fareComponent",finalFareComp);
+															
+						}
+					}
+					
+				}
+				
+			}
+
+		return calcJson;
+	
+	}
+	
+}
